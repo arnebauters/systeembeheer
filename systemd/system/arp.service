@@ -1,0 +1,9 @@
+[Unit]
+Description=arp
+After=network.target
+
+[Service]
+ExecStart=/etc/scripts/staticarp.sh
+
+[Install]
+WantedBy=multi-user.target
