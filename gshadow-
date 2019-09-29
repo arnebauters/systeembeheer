@@ -51,3 +51,7 @@ ssh:!::
 mlocate:!::
 uuidd:!::
 check:!::
+ntp:!::
+incron:!::
+netdev:!::
+netplan:!::
