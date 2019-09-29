@@ -54,4 +54,3 @@ check:!::
 ntp:!::
 incron:!::
 netdev:!::
-netplan:!::
