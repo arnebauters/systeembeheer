@@ -8,9 +8,9 @@
 
 zone "arne-bauters.sb.uclllabs.be" {
       type master;
-      file "/etc/bind/db.example.com";
-      allow-transfer {193.191.177.254; 193.191.176.254; 193.191.177.4; 127.0.0.1; };
-	also-notify {193.191.177.254; 193.191.176.254;193.191.177.4; };
+      file "/etc/bind/zones/db.arne-bauters.sb.uclllabs.be";
+      allow-transfer {193.191.177.254; 193.191.176.254; 193.191.177.4; 127.0.0.1; 193.191.177.176; };
+	also-notify {193.191.177.254; 193.191.176.254;193.191.177.4;193.191.177.176; };
 };
 
 
