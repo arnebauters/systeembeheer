@@ -5,11 +5,11 @@
 ;
 $TTL	86400
 @	IN	SOA	ns.arne-bauters.sb.uclllabs.be. arne.bauters.sb.uclllabs.be. (
-			12		; Serial
-			 604800		; Refresh
-			  86400		; Retry
-			2419200		; Expire
-			  86400 )	; Negative Cache TTL
+			13		; Serial
+			 300		; Refresh
+			  300		; Retry
+			300		; Expire
+			  300 )	; Negative Cache TTL
 
 	IN	NS	ns.arne-bauters.sb.uclllabs.be.
 	IN	NS	ns1.uclllabs.be.
