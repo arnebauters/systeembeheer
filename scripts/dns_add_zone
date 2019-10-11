@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $1
+mkdir /etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be
