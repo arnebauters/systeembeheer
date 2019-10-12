@@ -1,0 +1,9 @@
+<VirtualHost *
+:80>
+    ServerAdmin webmaster@localhost
+    ServerName www.arne-bauters.sb.uclllabs.be
+    ServerAlias arne-bauters.uclllabs.be
+    DocumentRoot /var/www/arne-bauters.sb.uclllabs.be
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

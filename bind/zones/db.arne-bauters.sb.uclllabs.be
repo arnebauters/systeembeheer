@@ -6,7 +6,7 @@
 $TTL	86400
 @	IN	SOA	ns.arne-bauters.sb.uclllabs.be. arne.bauters.sb.uclllabs.be. (
 
-			15		; Serial
+			18		; Serial
 			 300		; Refresh
 			  300		; Retry
 			300		; Expire
@@ -24,3 +24,6 @@ www	IN	A	193.191.177.130
 ns	IN	A	193.191.177.130
 test	IN	A	193.191.177.254
 ns.sam-arnalsteen	IN	A	193.191.177.176
+www1	IN	A	193.191.177.130
+*	IN	A	193.191.177.130
+www2	IN	A	193.191.177.130
