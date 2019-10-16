@@ -55,3 +55,4 @@ ntp:x:114:
 incron:x:115:
 netdev:x:116:
 bind:x:117:
+ftp:x:118:
