@@ -8,12 +8,26 @@ append_dot_mydomain = no
 
 # Uncomment the next line to generate "delayed mail" warnings
 #delay_warning_time = 4h
+myhostname = arne-bauters.sb.uclllabs.be
 
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
-mydestination = $myhostname, localhost.$mydomain, localhost
+mydestination = localhost
 relayhost = 
-mynetworks = 127.0.0.0/8
-inet_interfaces = loopback-only
+mynetworks = 127.0.0.0/8 193.191.177.0/24
+inet_interfaces = all
 recipient_delimiter = +
 
+myorigin = /etc/mailname
+mailbox_size_limit = 0
+inet_protocols = all
+
+
+virtual_transport = lmtp:unix:private/dovecot-lmtp
+virtual_mailbox_domains = /etc/postfix/virtual_mailbox_domains
+
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+
+smtpd_tls_auth_only = yes
