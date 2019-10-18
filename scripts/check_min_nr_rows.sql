@@ -7,7 +7,7 @@ ON log FOR EACH ROW
 
 	BEGIN
 		SELECT COUNT(*) INTO @nr_rows FROM log;
-		IF @nr_rows <= 80 THEN
+		IF @nr_rows < 80 THEN
 			SIGNAL SQLSTATE '45000'
 				SET MESSAGE_TEXT = 'Cannot delete row, min number of rows.';
 		END IF;
