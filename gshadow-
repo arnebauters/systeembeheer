@@ -6,7 +6,7 @@ adm:*::syslog
 tty:*::
 disk:*::
 lp:*::
-mail:*::
+mail:*::check
 news:*::
 uucp:*::
 man:*::
@@ -57,3 +57,5 @@ netdev:!::
 bind:!::
 ftp:!::
 mystery1_2014:!::
+mysql:!::
+dovecot:!::
