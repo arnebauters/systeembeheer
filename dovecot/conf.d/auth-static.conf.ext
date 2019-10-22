@@ -13,12 +13,12 @@
 #  args = proxy=y host=%1Mu.example.com nopassword=y
 #}
 
-#passdb {
-#  driver = static
-#  args = password=test
-#}
+passdb {
+  driver = passwd-file
+  args = username_format=%u /etc/dovecot/vusers.conf
+}
 
-#userdb {
-#  driver = static
-#  args = uid=vmail gid=vmail home=/home/%u
-#}
+userdb {
+  driver = static
+  args = uid=vmail gid=vmail home=/var/vmail/%d/%n
+}
