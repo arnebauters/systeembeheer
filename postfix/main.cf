@@ -13,7 +13,7 @@ myhostname = mx.arne-bauters.sb.uclllabs.be
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 
-mydestination = localhost, arne-bauters.sb.uclllabs.be
+mydestination = localhost
 relayhost = 
 mynetworks = 127.0.0.0/8 193.191.177.0/24
 inet_interfaces = localhost, 193.191.177.130
