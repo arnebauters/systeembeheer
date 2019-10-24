@@ -36,6 +36,8 @@ text/troff; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -
 application/x-info; /usr/bin/info -f '%s'; needsterminal; description=GNU Info document
 message/rfc822; mutt -Rf '%s'; edit=mutt -f '%s'; needsterminal
 text/plain; more %s; needsterminal
+x-scheme-handler/mailto; thunderbird -addressbook %s; test=test -n "$DISPLAY"
+application/x-xpinstall; thunderbird -addressbook %s; test=test -n "$DISPLAY"
 text/english; vim %s; needsterminal
 text/plain; vim %s; needsterminal
 text/x-makefile; vim %s; needsterminal
