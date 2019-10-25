@@ -15,10 +15,9 @@ alias_database = hash:/etc/aliases
 
 mydestination = localhost
 relayhost = 
-mynetworks = 127.0.0.0/8 193.191.177.0/24
-inet_interfaces = localhost, 193.191.177.130
+mynetworks = 127.0.0.0/8 193.191.177.0/24 [2001:6a8:2880:a077::]/64 
+inet_interfaces = all
 recipient_delimiter = +
-
 myorigin = /etc/mailname
 mailbox_size_limit = 0
 inet_protocols = all
