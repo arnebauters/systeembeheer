@@ -6,7 +6,7 @@
 $TTL	86400
 @	IN	SOA	ns.arne-bauters.sb.uclllabs.be. arne.bauters.sb.uclllabs.be. (
 
-			2019101803		; Serial
+			2019102504		; Serial
 			 300		; Refresh
 			  300		; Retry
 			300		; Expire
@@ -36,6 +36,10 @@ mx	IN	A	193.191.177.130
 @	IN	A	193.191.177.130
 
 @	IN	MX	10	mx
+
+@	IN	AAAA	2001:6a8:2880:a077::82	
+ns	IN	AAAA	2001:6a8:2880:a077::82
+mx	IN	AAAA	2001:6a8:2880:a077::82
 
 arne-bauters.sb.uclllabs.be.	IN	CAA	0 issue	"letsencrypt.org"
 arne-bauters.sb.uclllabs.be.	IN	CAA	0 iodef "mailto:root@arne-bauters.sb.uclllabs.be"
