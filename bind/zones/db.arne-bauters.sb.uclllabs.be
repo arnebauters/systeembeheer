@@ -6,7 +6,7 @@
 $TTL	86400
 @	IN	SOA	ns.arne-bauters.sb.uclllabs.be. arne.bauters.sb.uclllabs.be. (
 
-			2019102603		; Serial
+			2019102606	; Serial
 			 300		; Refresh
 			  300		; Retry
 			300		; Expire
