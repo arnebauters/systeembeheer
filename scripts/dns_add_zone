@@ -3,11 +3,12 @@
 if [ $# -eq 0 ]; then
 	echo "You need to give a name for your subzone."
 else
-	echo "\$ORIGIN $1.arne-bauters.sb.uclllabs.be.
+SERIAL=$(date +"%Y%m%d")01
+echo "\$ORIGIN $1.arne-bauters.sb.uclllabs.be.
 \$TTL 86400
 @	IN	SOA	ns.$1.arne-bauters.sb.uclllabs.be. $1.arne-bauters.sb.uclllabs.be. (
 
-		01	; Serial
+		$SERIAL	; Serial
 		300	; Refresh
 		300	; Retry
 		300	; Expire
@@ -24,11 +25,15 @@ ns	IN	A	193.191.177.130 " > /etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be
 
 echo -e "\nzone \"$1.arne-bauters.sb.uclllabs.be\" {
 	type master;
-	file \"etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be\";
+	file \"/etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be\";
 	notify yes;
 	allow-transfer {193.191.177.130;};
 };\n " >> /etc/bind/named.conf.local
 
 echo -e "\n$1	IN	NS	arne-bauters.sb.uclllabs.be." >> /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
+
+SERIAL_NUM=$(grep -Po '\d+(?=\s+; Serial)' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+NEW_SERIAL_NUM=$((SERIAL_NUM + 1))
+echo "$NEW_SERIAL_NUM	; Serial"
 
 fi
