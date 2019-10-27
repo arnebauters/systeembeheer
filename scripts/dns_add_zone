@@ -22,4 +22,10 @@ else
 @	IN	A	193.191.177.130
 ns	IN	A	193.191.177.130 " > /etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be
 
+echo -e "\nzone \"$1.arne-bauters.sb.uclllabs.be\" {
+	type master;
+	file \"etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be\";
+	notify yes;
+	allow-transfer {193.191.177.130;};
+};\n " >> /etc/bind/named.conf.local
 fi
