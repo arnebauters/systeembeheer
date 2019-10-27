@@ -1,3 +1,25 @@
 #!/bin/bash
-echo $1
-mkdir /etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be
+
+if [ $# -eq 0 ]; then
+	echo "You need to give a name for your subzone."
+else
+	echo "\$ORIGIN $1.arne-bauters.sb.uclllabs.be.
+\$TTL 86400
+@	IN	SOA	ns.$1.arne-bauters.sb.uclllabs.be. $1.arne-bauters.sb.uclllabs.be. (
+
+		01	; Serial
+		300	; Refresh
+		300	; Retry
+		300	; Expire
+		300 )	; Negative Cache TTL
+
+;NS records
+
+	IN	NS	ns.arne-bauters.sb.uclllabs.be.
+
+;A records
+
+@	IN	A	193.191.177.130
+ns	IN	A	193.191.177.130 " > /etc/bind/zones/db.$1.arne-bauters.sb.uclllabs.be
+
+fi
