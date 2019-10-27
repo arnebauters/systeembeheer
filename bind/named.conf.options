@@ -23,5 +23,7 @@ options {
 	recursion yes;
 	auth-nxdomain no;    # conform to RFC1035
 	listen-on-v6 { any; };
+	dnssec-enable yes;
+	dnssec-lookaside auto;
 };
 
