@@ -32,8 +32,13 @@ echo -e "\nzone \"$1.arne-bauters.sb.uclllabs.be\" {
 
 echo -e "\n$1	IN	NS	arne-bauters.sb.uclllabs.be." >> /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
 
-SERIAL_NUM=$(grep -Po '\d+(?=\s+; Serial)' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+SERIAL_NUM=$(grep -oP '\d+(?=\s+; Serial)' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
 NEW_SERIAL_NUM=$((SERIAL_NUM + 1))
-echo "$NEW_SERIAL_NUM	; Serial"
+SERIAL_LINE=$(grep -oP '\d+\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+SERIALWORD=$(grep -oP '\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+sed -i "s/$SERIAL_LINE/$NEW_SERIAL_NUM$SERIALWORD/g" /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
+
+rndc reload
+systemctl restart bind9
 
 fi
