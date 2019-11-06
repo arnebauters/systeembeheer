@@ -29,3 +29,4 @@ root	ALL=(ALL:ALL) ALL
 
 #includedir /etc/sudoers.d
 check ALL=(ALL) NOPASSWD: /usr/lib/nagios/plugins/check_apt,/usr/sbin/arp,/usr/bin/dns_add_zone
+check ALL=(ALL) NOPASSWD: /usr/bin/http_add_vhost
