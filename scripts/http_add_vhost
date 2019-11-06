@@ -1,0 +1,20 @@
+#!/bin/bash
+subzone=$1
+vhost=$(echo $subzone | awk -F. '{print $1}')
+mkdir /var/www/html/$1
+touch /var/www/html/$1/index.html
+echo $1 > /var/www/html/$1/index.html
+echo -e "<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName $vhost.arne-bauters.sb.uclllabs.be
+        DocumentRoot /var/www/html/$1
+        ErrorLog \${APACHE_LOG_DIR}/$vhost-error.log
+        CustomLog \${APACHE_LOG_DIR}/$vhost-access.log combined
+</VirtualHost>" >> /etc/apache2/sites-available/arne-bauters.sb.uclllabs.be.conf
+
+systemctl reload apache2
+
+echo "$vhost	IN	A	193.191.177.130" >> /etc/bind/zones/db.arne-bauters.sb.ucllllabs.be
+
+systemctl reload bind9
+
