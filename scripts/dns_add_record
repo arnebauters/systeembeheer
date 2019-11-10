@@ -28,6 +28,8 @@ if [ -n "$1" ]; then
 	NEW_NUM=$(("$SERIAL_NUM" + 1))
 	sed -i "s/$SERIAL_ALL/$NEW_NUM$SERIAL_LIN/g" "$ZONEFILE"
 
+	dnssec-signzone -A -3 $(head -c 1000 /dev/urandom | sha1sum | cut -b 1-16) -N INCREMENT -o arne-bauters.sb.uclllabs.be -t /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
+
 	rndc reload
 	systemctl restart bind9
 
