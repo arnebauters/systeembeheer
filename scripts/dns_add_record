@@ -1,0 +1,36 @@
+#!/bin/bash
+if [ -n "$1" ]; then
+	if [[ $1 = "-t" ]]; then
+		case $2 in
+			A )
+				printf "\n$3	IN	A	$4\n" >> /etc/bind/zones/db."$5"
+				ZONEFILE="/etc/bind/zones/db.$5"
+				;;
+			MX )
+				printf "\n@	IN	MX	10	$3.$5.\n" >> /etc/bind/zones/db."$5"
+				printf "\n$3	IN	A	$4\n" >> /etc/bind/zones/db."$5"
+				ZONEFILE="/etc/bind/zones/db.$5"
+				;;
+			CNAME )
+				ZONEFILE="/etc/bind/zones/db.$4"
+				printf "\n$3	IN	CNAME	$4.\n" >> "$ZONEFILE"
+				;;
+		esac
+	else
+		printf "\n$1	IN	A	$2\n" >> /etc/bind/zones/db."$3"
+		ZONEFILE="/etc/bind/zones/db.$3"
+	fi
+
+	#Zie dns_add_zone
+	SERIAL_NUM=$(grep -Po '\d+(?=\s+; Serial)' "$ZONEFILE")
+	SERIAL_LIN=$(grep -Po '\s+; Serial' "$ZONEFILE")
+	SERIAL_ALL=$(grep -Po '\d+\s+; Serial' "$ZONEFILE")
+	NEW_NUM=$(("$SERIAL_NUM" + 1))
+	sed -i "s/$SERIAL_ALL/$NEW_NUM$SERIAL_LIN/g" "$ZONEFILE"
+
+	rndc reload
+	systemctl restart bind9
+
+else
+	printf	"Not a viable command, maybe you're missing some arguments"
+fi
