@@ -1,6 +1,6 @@
 #!/bin/bash
 subzone=$1
-vhost=$(grep -Po '.{1,}(?=.arne-bauters.sb.uclllabs.be)')
+vhost=$(grep -Po '.{1,}(?=.arne-bauters.sb.uclllabs.be)' <<< "$1")
 mkdir /var/www/html/$1
 touch /var/www/html/$1/index.html
 echo "<html><body><p>welcome $vhost</p></body></html>" > /var/www/html/$1/index.html
@@ -12,14 +12,15 @@ echo -e "<VirtualHost *:80>
         CustomLog \${APACHE_LOG_DIR}/$vhost-access.log combined
 </VirtualHost>" > /etc/apache2/sites-available/$vhost.arne-bauters.sb.uclllabs.be.conf
 
-a2ensite "$1".conf
+a2ensite "$vhost".arne-bauters.sb.uclllabs.be.conf
 systemctl reload apache2
 
 echo "$vhost	IN	A	193.191.177.130" >> /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
 
 SERIAL_NUM=$(grep -oP '\d+(?=\s+; Serial)' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
 NEW_SERIAL_NUM=$((SERIAL_NUM + 1))
-SERIAL_LINE=$(grep -oP '\d+\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)                                                                                     SERIALWORD=$(grep -oP '\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+SERIAL_LINE=$(grep -oP '\d+\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
+SERIALWORD=$(grep -oP '\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
 sed -i "s/$SERIAL_LINE/$NEW_SERIAL_NUM$SERIALWORD/g" /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
 
 systemctl reload bind9
