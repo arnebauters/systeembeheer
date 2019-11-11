@@ -1,80 +1,80 @@
-; File written on Sun Oct 27 18:27:58 2019
-; dnssec_signzone version 9.11.3-1ubuntu1.9-Ubuntu
-arne-bauters.sb.uclllabs.be. 86400 IN SOA ns.arne-bauters.sb.uclllabs.be. arne.bauters.sb.uclllabs.be. (
-					2019102609 ; serial
+; File written on Sun Nov 10 14:10:28 2019
+; dnssec_signzone version 9.11.3-1ubuntu1.10-Ubuntu
+arne-bauters.sb.uclllabs.be. 300 IN SOA	arne-bauters.sb.uclllabs.be. root.arne.bauters.sb.uclllabs.be. (
+					2019110912 ; serial
 					300        ; refresh (5 minutes)
 					300        ; retry (5 minutes)
 					300        ; expire (5 minutes)
 					300        ; minimum (5 minutes)
 					)
-			86400	RRSIG	SOA 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					ipXlp2LcnOZL+GIeleuCEXn0wTdjUvyXR6A1
-					IVKADtJzNP8/b1WvkUs5wsTI5qAshWkXErLr
-					dCOnmX70t3cnZMPpInSiD9B/tdsd8ukK/YYA
-					dQFZtrpDQdtM0ciRsiBn3iYlH02M75IJZ/pu
-					V00Owkouiz2F78cgaKKZZ12kyHiadSIcNdmv
-					5Xpotkz5u7ZfmK+GDLT6GkZdSM320lAp0bVd
-					VHIDRddG4eB2DNC8JpiSi3A3rLdU1dxLkfrR
-					y9AM/JwRRXei5ImjvbZ/eD/q08K3S7y78Tol
-					mKQLESFQ6WR57EBoCDQ2gAWyD2UYgQMekpPP
-					K/LViHo1Qf3e0jxR5A== )
-			86400	NS	ns.arne-bauters.sb.uclllabs.be.
-			86400	NS	ns.sam-arnalsteen.sb.uclllabs.be.
-			86400	NS	ns1.uclllabs.be.
-			86400	NS	ns2.uclllabs.be.
-			86400	RRSIG	NS 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					UWKXdZiOCNQFQ33Wz/s3KsL7g7vNkbYH0RcC
-					6PlzJIkjikKCvm/lwIko7VI+XVwVmno/lHUJ
-					AVHnb1D+XKinB+eHBF6IDnKkLq3xU5wySDtQ
-					+Ux4x2/71SZuEfm1S9oGSEP2PPUYMtcI1DHq
-					blwQF/TtN6SHlAMea6Z3YSF0QhmiMsX013JP
-					8PgThryIRFscEYNjVcJJWeh4r04B6UKZOhiS
-					qxcoPtuqmqGQNcrwW6s0F4d5rR0miLZaUiXO
-					Tf8UP6dLE7UTh3GyhjPnN2IlHgJ5w0ekNpL7
-					xmRsoCb5rxcCTOVEqgAXSCJgF8Mvvs4jV+Kh
-					QDA7UghhfeI1nln6aw== )
-			86400	A	193.191.177.130
-			86400	RRSIG	A 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					cl74Ec1Pek52TH3PXIynguGFDzXSkArckRVk
-					wJMvtjcD4gRkhjU/K+u4rCctMCHtd5iVqR4t
-					G+EbbeiOiRVNFhHUpZXOdmVv0Qk2t2/ee1Rw
-					F0zYVPOebXFsdzBh7vDseO55gQFE7wPIyvFM
-					yRM4704z3cSfCpbwp+6nkYu0la4gu7M3ylRc
-					QpeLshFTgwaLvVawmFtQHr9UNahzVDXa+xXK
-					WOryh+5weae/kn8w4DYp6GUKSfvCEgOIaA2x
-					8yLqFZSJwilZjQyOWeqywo6ScMgiPsrKESAi
-					8QMiwj7SGkuaP0GPb9lyaEsKWG96iW8ZyYzi
-					jMV/5J0wbrpZ476TLA== )
-			86400	MX	10 mx.arne-bauters.sb.uclllabs.be.
-			86400	RRSIG	MX 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					ZE1c5q9zwSfAcIvvC7RilK3QYjffeWiFGT+/
-					JJ0bXghdvKJniNkbPEvVGEg/gbnXJV2fCQSN
-					2Id1o6ykLxzbHXskazFhhNQm2FSh007PdHP9
-					ld0sbJ+TIj5jOZDeMcKVsM0TQsWT60cAtb4m
-					2s2pCHTw++daWCodVOx3vlAzJ41BbQsNAxet
-					416Itz2KMTBLvkrti0zZoT/zFLdHCbEjZVyk
-					EGBaQeXm4b9zcb4e4MN3A2KAsmLJ2xw3Ckif
-					rz2ukbzfrdg+lrFWUpwopjstiG3vhrH/YxjB
-					FlB0uUjGJZm1b4+nvUKFEEU8dthoJtHtLF+s
-					VwLintsuy94NTPwF9w== )
-			86400	AAAA	2001:6a8:2880:a077::82
-			86400	RRSIG	AAAA 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					lSzqQ5mF/boAbPWGLRcvITVFmPOcmNZW/vWP
-					V0ebwrTgKTuyB7MOzcE4OqH+EtztRKVdUKR5
-					fjKOQSYbEFcKIoUThwgP11oi/rmyiGxa1k5R
-					oSv+1oIcO035SdsmWaLKqHwYPiiQQoOCD+Xk
-					DustbOn1DikCDUGveYumxipScg/VIjSVIJUn
-					5aayiChhCz6e93ZhVGqhE/BrqYt/RLkXLpfp
-					+99PrTnJTqGc34/BbDPVqh3owWUzCymGmRS5
-					bCqtBG0dkCMm+1TC68508YoO9h+MTpZASBM/
-					+0amYuFuPu62vZUdjjbnYtUls4uOSQ2RIWGW
-					F26FtyOiBj5sk7gHug== )
-			86400	DNSKEY	256 3 7 (
+			300	RRSIG	SOA 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					m3V1bI//x1Eo5vQFU22wiotFjvepHUKQp+DB
+					uo9RqgjRc0K+jNaoFXnDcNWoWVhzBm8PviVH
+					6LZTGueJbF+PZqPKQ660JwMqZB2qHRCiAlNC
+					UU/ZJb47nv+v/Fs5S0vTxt8MIoUmB4eml0NS
+					YrZtHjLYKlUs/Z48GX02skur/uginjld24cb
+					p8RS5D2SssH7sKgtdkwvVzPUHky0X9a+rlgQ
+					6BANq3CTDNHIyWsdRHx5nYMpIAt9zg8iLlIS
+					e5YuWwBMIwhk7+F0RTvRne4LRf/Ndshl1+NW
+					V7ZN+nW5Cejv2IvxkNN1Yye++OGukU03W11R
+					ABQGz/JIW6OvEJQjzg== )
+			300	NS	ns.arne-bauters.sb.uclllabs.be.
+			300	NS	ns.sam-arnalsteen.sb.uclllabs.be.
+			300	NS	ns1.uclllabs.be.
+			300	NS	ns2.uclllabs.be.
+			300	RRSIG	NS 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					JOHm2HGdmsSfj5rr8h2bF+Gmsdn+kgYfzQnF
+					CNhIx3IZDKLLLdBlkYrBC99zYq1v/dl24qzP
+					o0RX4VHwcJB25RrKgJzWw4ACCGes0x/mWhD4
+					Q5xhoqNQZ8v5TdRnA8ocCqMTbnZOI4SG5Kwa
+					Pgk7SThyrurLB5v/in0ypKL94uDXOJdyMNhU
+					p8JCyd9iVS2xmexflT2qbe7K48myEzbuMzsU
+					0Zp3IqCR/6TnXz8SmI1rIsEJdj2+jAy/Y274
+					h7bVz55ltPt8l/iSWELoihYPau6oPkhKcZ0t
+					duYXxKS3/kb3XTWtXqhVXe0gWfHpkWu9H+ZG
+					hbfPDt/PCBGv49PkaQ== )
+			300	A	193.191.177.130
+			300	RRSIG	A 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					WHxHgGI2IbzkX08ZfsL1ekKoRacf5o2l+6Ta
+					/l+U5zrTvclNk2Z0k7D/fl4IuOBbYzwyC479
+					Mnrq5oeOwZvJnOmsUclt+vvUDnwaxN8dziBd
+					Amm0uoJWbvKLeznxcrVDn7p2EvHhTmbFxyMq
+					4OP1+MjHtyghJBqkswZ3fcrTHKLlBUHJ4VUT
+					L0/WSKKuvmF+mi0v8fVV9tN5FFcOsefUH25K
+					CvVOjt0aOIO11jVvC37cHAXlGYzSp4UiPmbv
+					Ifwkj5aIGflUO8DYWfzSfk7K1eqSpXc1O7PT
+					FVWO4UA2SZcy7snnjcpOrj1zFyl1kSCxUdZo
+					x7g+FAKfHEDGsqSxKA== )
+			300	MX	10 mx.arne-bauters.sb.uclllabs.be.
+			300	RRSIG	MX 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					odICSDf1nJ00OT53GRqxWJkWFWphQk4SVczq
+					HEbyQ9keSWjJy4Yx/z28zThV18YBE/5lEsLq
+					KspB80YmUFx8S193qS+uHavAEkglgogtxsPi
+					eMMkd/ZjR9pezrHHnhQtDEZ2R7v4/vg/Y2of
+					FfA2WcIJSZ2m0rXTCjbo7D5QTqzkPsVzzDl2
+					oa85iu/S/o00ilYN99LTayLFCWtYiYyiUs3y
+					9/dOcFMgQ6diVtTZtAiTDvajVDMdpW9z36bJ
+					zAG88hfd6hGxL4coBhH5vOk3L7K7a9qud3Xs
+					PUS5pyhxAO6g/rgcWlp/1CcLtIynUG1QvMGD
+					Wh8Cy3OOpBx0KZfQvQ== )
+			300	AAAA	2001:6a8:2880:a077::82
+			300	RRSIG	AAAA 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					qOvimDsZMmFuVL5ohXZnclj0cBL2k5+Rv9/F
+					68wEIXvhT+PlFiy7TfcRdjhkZcSpGNlU/DoY
+					ddZxHAuAu7lUuEV0jbJvA//Y/z5HcQCSw3rp
+					WoDMpAsygnIxIiLzvx9I4HCYkvwoOpDCtuUB
+					+s7VvoVul3WnhYPD5BCCOjH+PPRofmgAb8Qz
+					CQfdMIDgOqKTJq7Pfpv5yrFhZs4f9RtZhppf
+					+L5frgi3/S/tsZx6hjvmon2pGS7gCngLos0y
+					WvlznYh5vLPOzDcZwQYWXIOpsFYxSUNhXpJS
+					vCuGUYbPqs/QIdyxsxkH1FSGtD1Li+iGNwPs
+					QWPw0UgSCbGNZ9AZvA== )
+			300	DNSKEY	256 3 7 (
 					AwEAAbrzn7YkyaoVzPZQslvdidBBnlXnLWVO
 					u5ENG9uZV/803D4k/gMIyz+njhl+OePS1eWa
 					s+70ch9B9yamb0QFjeojtbV5FuxakyV4lnE8
@@ -86,7 +86,7 @@ arne-bauters.sb.uclllabs.be. 86400 IN SOA ns.arne-bauters.sb.uclllabs.be. arne.b
 					3UBVkwwjHnDGuhgdAIldutqqe5gpNjjZzN+D
 					pMV6G9bOqZnqOGwLyvxhcZM=
 					) ; ZSK; alg = NSEC3RSASHA1 ; key id = 7529
-			86400	DNSKEY	257 3 7 (
+			300	DNSKEY	257 3 7 (
 					AwEAAdQhI1LuITYYEnPlQkcWeeSTGLDxR4t5
 					YU/bF/Hyz/0G8m3uqPqc5XRU5NeLQAqdqOwy
 					THOe4w0LxOX7QggeRuF7RGWz/B5IuIfo/WDU
@@ -108,427 +108,371 @@ arne-bauters.sb.uclllabs.be. 86400 IN SOA ns.arne-bauters.sb.uclllabs.be. arne.b
 					XdAKGf6DgCkm3p8C4ceqSktoH/cNgSKhFl1n
 					Lx5x
 					) ; KSK; alg = NSEC3RSASHA1 ; key id = 14115
-			86400	RRSIG	DNSKEY 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					S1WRQ4VrSviRDp8nRKHtdNnEY2mHous3Mi6c
-					w+ibpxz3JFKitVS9PGdx6+xgaDe4TqBMRUza
-					TP+lbVfTNY1OWbhyqcOn0dUBN3Wgzu3X22XM
-					aempBf1XeNOGt66sTJU6hE8MSlkpsER4+qKo
-					L9dmS9nuVfmbHMpLvQyENfjIUyKfuhqK9GcC
-					j0rh7moLRV/Td27HtjHWLcv3L9xOtwkujRX7
-					Rbuy2HdTaneldDyJ0K+lKRLUG5awoGOxoyCt
-					rsmLgUNS7XOPJB04AMJMKHjjNVIOsNSxGEZ1
-					7buabz/IoUcS+m17YxpkORV+BAlhMuPimNtV
-					Z8X3iav0+voZTeSGjQ== )
-			86400	RRSIG	DNSKEY 7 4 86400 (
-					20191126162758 20191027162758 14115 arne-bauters.sb.uclllabs.be.
-					jQFOcCN0XQS0D9y/ue4J5fO5cqc1HKstzxbu
-					kNvoX200cTWP9YJMIMgJmh4cbwiUmiKvGRB1
-					uauTQdnS8WfnMVtj9cMu+fqvMIE2CkK6l22N
-					n6iidytJ0+W8DXXf28AcG1eINJU2PB7aSGGN
-					pfROIJ30vUWVnX3slMyi+pBO5WUFqf4XQZEb
-					lIW9+7UzkTseBb8G8QSK/6heEsAieNY+xLc3
-					fMEKDhq4wH/gxYGnRW4otencTlSfTaOPCuze
-					VzNAXZpsKOSpjYgF4t2jZS+v1TKt37MPHFr2
-					9umwIDe+bjaxDuwYnmYYQ/cPYKHT/IpPLcNc
-					e0u1v+yfz9Vi5SR8pCIL44rFnsCGd9k+bHkF
-					B+uOuUukSg0eI/RWD6JFnAQNEVg1mYXOKsWj
-					VOOtRED2JZ8KqRrrUlVTfmBYUYa5uU76YMy7
-					kkNR/i5q1fvYXjvxTSzFI+H9rMVojxpc9vRr
-					wUZLisiRhHpwh5hKpb0tCzaEG9T34B7Pyk6g
-					opRSHwxj+j42Eem4maVDIkoW1iUPIrxBpgIq
-					0r8ds8Lmn9yL6TM3XiJ+79rS6YbQVxJn86xO
-					p6zrvZL50sMBKG6Y03+mtII0vacwNhThWGlL
-					XUiqF6gR8mGjDO+J41rjJMKS8Y34JS2HS8cU
-					sSCyaaV74/gyN9md+lIg8dMYBeSf4hx1z5I= )
-			0	NSEC3PARAM 1 0 10 F7206C9E263E13FE
+			300	RRSIG	DNSKEY 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					Ap6T80K9lkG+WIif0trrU4l3tVrcX9fGDfzi
+					QlIbqExpOhaHw99CQYRXkNwRoOqZ1KzcU5aJ
+					+4agUe0j3pmJ6yPBnebi35klLzLV/PHNnIB4
+					zbxuBtSYPu+pdXUL+kPDkOKFkvWeLhD3RncD
+					ptaf6TIMW0EgfSb6JOSguEU11BPHzjt+/F1l
+					ioV7rNbSYqy78g9WK9l7d7RgowiA1/uEWUGP
+					tnQ/7YMxF8Vo/NVb5olafSst/vOzo0vZ3I4t
+					WHwj2jRrxjM5SBdbiGsBBpi+mzmAXCRdpYwB
+					BfLjYyU3PXc7naz7tOS1GMNndm0vEpSCtKb1
+					oX2eD6pBjBfn+PxMyg== )
+			300	RRSIG	DNSKEY 7 4 300 (
+					20191210121028 20191110121028 14115 arne-bauters.sb.uclllabs.be.
+					LYkdagwS35Tw+fc0+JMwwC+MNkpmne/7vbAI
+					B2kaG1IC/krgYXKuBdfeAlqgR9hd5L6y+cEW
+					7+AaWquazIjqDGR/Axim4kAGLtdPCU3Bozp7
+					cpEawoVug8SoT4kk5fLmSFNpRSYt2fyP5Luy
+					c7IM3wPa4MCX8nlZwxEkRoD5e75ZB5rIOpcQ
+					YUTjH3DpcUyrYXp9dMkcT5cxXLMg3HLuxUv8
+					2GnXmDOfyt2TXxkoN2wrmMPYloTiF+hzBTCP
+					JZ8kqp2xQSku1iN4EConJnOLlaGB4tY/DiSG
+					YvECNBb8WuOKlTdt+xyjnrDDdWuHtzEpE3GZ
+					ebuSYh3cppj2hxvhBK3Zhgr+y3Q9A+54lfIN
+					TK4v0eYkYRlgD5kwDnhKtneYslB3jwanMRTS
+					RhsWkB0i3gsChT9dsQYI/0J1rbndOts8RXug
+					NO/gVA9q8htQLeck4j8b2UMYm0VTmaYjLVUA
+					ISzgg6l08ULkMKke5wsahCxBzlQ7Ht0qrBuW
+					G19ww2Wqv6kodVtxSpocXy96RQuZoamby+vE
+					Ev1Dci2z6MDeafNQC8jPnT2tgG+McktR7gA/
+					GyQSj+usvDbkKdukY9IrBJHibvBgJ3g28Xga
+					C8jgmgJcKYhyD8JcRXsTWALsACOGmsxsIDTg
+					OzNVqTNKne38oeUD/prRGD4K1GgSmSWi5sE= )
+			0	NSEC3PARAM 1 0 10 9E20E42EC5668BCA
 			0	RRSIG	NSEC3PARAM 7 4 0 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					STSBw6ZPv2HAb2m/Ya8V+3vMQIm7soVEF6Ox
-					4Q97Prq+PToAnwxR+Dz2FW7x5owIOEVoYD57
-					T315gpvP3MDBaq70/5ja8+i8LzLMmpz2b7AV
-					sHNcKjxISDApGoerPMJfP2p/GeHwFRXqMwu/
-					ASy+kYZComqlhFCqVe1ipX5HJ8J3Olsl/FIr
-					JDlmBzbMpsiudpMknCmgofDRJGcuYAx2R3oZ
-					q3QxaCmh+qF1x2MqB1bxbNyssbliX0sBB3/t
-					TwgTV2XpQyfYqMVQVWpIgrrdikB2VGayZfSt
-					U9kdgj8YC8gvdiQcSePO9rj0BvDtuYKqLfrd
-					l0t6uZdamUEnW4Co1w== )
-			86400	CAA	0 iodef "mailto:root@arne-bauters.sb.uclllabs.be"
-			86400	CAA	0 issue "letsencrypt.org"
-			86400	RRSIG	CAA 7 4 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					XHF3/XidZ4Mn/DnMuc1AUFoILzYo07XVDvRD
-					gd0YfCFxervsWhIg17p/RNzWuUqgVeGvMd+M
-					XCxUHT1bN4/KMMsI4hlFi8M0rB/tTv+C0XSj
-					VeEmWcrHbL6DXtVLqSp95WjjY2mMXvRQvnhg
-					x4YfTbqcDxYaLPMIWniq8jQEAY9vSWBexlR4
-					rfn7LNB3Cuk5SmAZtY+Vt88/ctc4yrNw/31E
-					ehJzgKafhkOeLnGQuQ0hctHpy5QxVumLSTRh
-					53KNR8uiIAqpHJJ5FKRmLYy5xV8Y/xfRfgfO
-					QV3C+YkxLcT+9wv610Hnn9pNDzy8/+km7Lu3
-					Jz6Lxu1WXqquDUKWAw== )
-mx.arne-bauters.sb.uclllabs.be.	86400 IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					My9iIZI18xBXub8FfHlAawJZUTRFPjlX7Pa7
-					wYYT9ZvK6hrOyEXzQu+KdfwcGl0ixvVjhmJD
-					4rjEe8+BUZD7UP6l8CSMQdfUXbRZymOKD98C
-					VNSc3V3AVRxr85HAtAl1WJfmZ40D656Iz5uA
-					S6dNCWyB1j2LAXEq7v8iakeiGdQgzrk2disd
-					WDaL27Gyn0/2e0OMjP5/yzYhhfzDf65lRECc
-					308qBGGU1Qb1PgSd2rn0mx+8YNeLC89xEguX
-					icgKlVOSxNC0q1ZqAs6VRvtvWcIiYgS8st9H
-					YLKk8TAikPcR8vd21CTM6rQN9M02ghUR+VBw
-					rUGLYMH9T+SR4FEUEg== )
-			86400	AAAA	2001:6a8:2880:a077::82
-			86400	RRSIG	AAAA 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					gf7ld3OYr13wJ4FvGLj9A/4Y1j7SrbU4aHIo
-					dTx1JemoVI9O2z3Phkaog4Qi2SoZ+Ra1Jlya
-					uwESs6r3Wp2Ij8CdAkWRnm36rLBIJ7NZ1ZBT
-					tybRpvL30xcta9KqP63A4HR1M1p4w2tOVNyY
-					IccPgEBblymjikRqoV6vrg0GFcxya7ol1OXQ
-					+EJYouOzVG1JyiEqKOFl0KAne3yxhbglL7cn
-					TD1JAz0WTKbfG29H/kxO3aAEHrC2M3W/rAjI
-					K9O+fiOytgXqNie3zRRvPk/4gBmszPXqjgoN
-					tsNIhzFAU+OA21cMab4ukbuHBqxjq/Vh963i
-					t5/+0LsUbz8/haJVVw== )
-ns.arne-bauters.sb.uclllabs.be.	86400 IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					cb+B5UxelkDtb/4CJh83JBwl/IJeGjxCpJJ2
-					ynz9SDLUifzzPO2khCaRNrMDeoCDfcdi7wlA
-					ts6egbziWMlYTh62n4cXoI79NhNGh/QdPcnl
-					X+Oenzfd4gFidlyjYb+ozcrR213XDrtrSLhD
-					wx8WUfvAmHaV0DADmZVgkifafZbeSjkZnFHd
-					WGw0uD8Sg2k3kcS4rMALlpWB61yWasHQTx+U
-					0zAz2tbqYrJqNZvAQ9wJa/E2plSQPF4UFSJ9
-					vV6sM42cdH3UyJRusQLgqczbhl3rnJ14Mffc
-					lp9KrjzP4V1mvUmmytGmLyFKiAbiMcvE/aDS
-					lOm0EIQ+N5SL5gfkTA== )
-			86400	AAAA	2001:6a8:2880:a077::82
-			86400	RRSIG	AAAA 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					WEqtcbFmVw4rYez4blCnV/jIQS0upfwvnf58
-					A6kWe7l5mGYhoPqFqJCkUgbZcWyqAocUpIkI
-					Zi1z4z8w2b8tsM044p6lREkIE6ut26FYa3pu
-					cbQC2LNxuxtlYTrdKBd4ljpgr22IkO4tAcFY
-					UpRA6wA50j7vHAMqjtOd0+w4vuukQICH8AAw
-					Tf77gMDxqBY6xbTFVAzojJNOpydM0Suh7h5Q
-					6xzcsbw9AOsnxyzV2HZS1KOdsRn1OD9JM5zf
-					g3DhduqPqg3OS0KjjU+yOYkWkcixoOufrf9b
-					W0UIhWljCygdOsEewE58pV89UuQvI+8VpvAR
-					ETh6U0GTs6lIszTzpw== )
-ns1.arne-bauters.sb.uclllabs.be. 86400 IN A 193.191.176.254
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					l/b5tSHxqaPXiLj5nGlIZuWQ2nwrZPyz7G4Z
-					AIumAn5HHzoAy+tZ8qUT6VVVsAiWfwPFveqh
-					JVbFbeWccL1zCMYkpQjHDRYWburKhVenb/VC
-					I3BgNaMCLY02t7mXDcBLu5K32q3oA80G8GLz
-					FmMRQTzvhtsPbIIKfpg5oHNC7teMztIcKRKv
-					sr/bgWDSA1ZpmVR8qJ6OX51l0vK2gv+uZ05q
-					7rPEHzhLa8E3yYrmSURLlnCAki6eyJhDqssB
-					LSDeo3dhExsKX3C+pBOmkuAHyrhHldkUFn39
-					bih5rw6niF1/J98lq3sEtuQy9jMh7OZaFwxs
-					ylqp3iyPkqEzZozsgA== )
-ns2.arne-bauters.sb.uclllabs.be. 86400 IN A 193.191.177.4
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					e6tDJy54MAdxfXgD6g3DoFnIwGjw6WmnoBCT
-					aIF4VQDz+tFKTE3lvGTu++99VCJNKEU5wu8t
-					WRWg6SC9RxV7vPXbRoH7irs25ZysHcXq95/a
-					zwqaK/kmXsreJShrV+MalEMqYGDjv2KxX33H
-					XX+fNLaFE1iGMYghasSCwo7DBiN5YTCSVfU9
-					QetTv4BWzpl8m0GQPzcIYRoAuSGqhxxhmmAI
-					hiNi8TRrKoyR0rEE3f8oqdBkcLaBp6tWKh00
-					UtQUIO5xkKcgByhjD/jKf3zIEa/DTtAQnYoL
-					gF1K9Kjyn1b4KLdMHSFHm3y53d+TM7JYtYQj
-					JYruQQ7VL4f9bhwXfA== )
-ns.sam-arnalsteen.arne-bauters.sb.uclllabs.be. 86400 IN	A 193.191.177.176
-			86400	RRSIG	A 7 6 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					bVp75aO7ww6wjpcLC0lZ/LARLJaTi6skA98d
-					SuheEF1ptBICWvKIbChIaJBLVyf0e48ePZBH
-					nfD+JqewgNg4cH3KRfsYcD6+cq75EjDrqj6z
-					MazhgyskRGIWFtf+UB7ZWejVP+Wp00iMBI1u
-					5ntgmcsudQylGfXUerVK1vB5jfo/iSdcE3a8
-					QXfJRN6fneBssuc/U5nawsF+romi0cOEJvbE
-					oWAvV9b8PnGvhLrHEFxV1PNhQUW01u0XncCH
-					JgjOoxSSxxsONfk9htsraIC4zrjafImoeXSs
-					Uk/JVMJu3lNuBGIHplRkNuIhvV1CT2istC5t
-					O+yxWeUKK/PMaiGT/g== )
-secure.arne-bauters.sb.uclllabs.be. 86400 IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					sS5ydGRtfmHR8dqyIdF1UyoXuziTE4Li+2AY
-					QZK8guQpCkTfybEecOSoZnKMx995HCx3/R6A
-					8RdHXnxM7PzLPFOBi8/G1QiVyCZXMMcfFaZU
-					f+x7kWnTgsJI8DUKc2SHFc7/KztC8aWRwfV7
-					B9AmWOwrCuxjrSpYHTQVswFNbD2vv/QI9eMQ
-					DVtXup+CurInDPHsuhFTBS2b7lmvDWqq/IiS
-					AwPs7o1GKvJBHpdbOckY6sjZ466+XWefSdoZ
-					g14fB0rgfIvSM1oy8ngNYVCrL6vdmMupF9OV
-					UdcXyvoPaD3Mcj9tPIAqZch++SA/1OjIvXnP
-					wxQ2jV1iBuUudcR+Hw== )
-supersecure.arne-bauters.sb.uclllabs.be. 86400 IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					NMJLYU9i2GkSJWvZJpqpGXFdmLNWKaxSxTli
-					BFw/8oNRRDwuzjPH2iNn8BlAg1XdHFFNXaCm
-					I0QwcriG+Gma0kBgwWTMzmBtCqo/23ZLU4xJ
-					HP+NqGcy3yUtjpEszBw+qXMdLvy/4yZGMAGr
-					P+gsuRR0LfkoJ7OqGWkBn0O1ReaqNQDFmjdg
-					D5l9ofonJPqXqYpj08Jmqz0Gpt2guKHEt7Tz
-					HaexQEIvPeFvM8RqhoCDoItdYHIkonG95Sf2
-					fPSU9rpvEWSZ3khIRROI3GXsDToPvS4ZPJTg
-					HEx5JDPyttpe/blyeTleWVdQ4UdsP/JqiJek
-					eCznXON/nNDFy9TghQ== )
-test.arne-bauters.sb.uclllabs.be. 86400	IN A 193.191.177.254
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					lmgI5yk0+h7IDWBx5wdkKGzSzr6CNttVOzLC
-					5ruwITeGm6Xyj1ukTVosCCPIjSh0RwtkuNj6
-					JBZQUNGVgbhiUfZWFlQ8UgFS69WBlxgyHYKu
-					uPngW/LvNCAhzl2ciH98a5NPb75oB+enMdK6
-					pimLfCYeeE4dOPwHXMwUkvzidH/l7nEEo+Zl
-					STVyv5QknHPtbgVVhw8emSwbA84snBFN/Elw
-					Wzkto9f7XTEoot485Vf5ZaoNTusU9c444XZO
-					9v6nu/cTD83vT1RnE+XeNsaMSpgTqCGPck7w
-					OcC6OF3CLpTi8+slhM42D1CjBYGjdIvWJOM9
-					uA0Rn4Cu4GRwtmAK9g== )
-www.arne-bauters.sb.uclllabs.be. 86400 IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					Lo9qQ3jI4emUlga1Me/7D4oh7Qy4kJZq5zpV
-					Y+M6hyBwgThEuxfkKrJClyF6xvMpOZ0ShHMC
-					6D5Bq+VqASF3naihqa45v3mbQllKOU+793Xu
-					dvSmcEGxVkg1x97vZXBgqFQ2Ez98lKAsU3g8
-					fZpQnmVGco5buu2B699QMep9PsO3IFI92LNq
-					wxdh8wtASU44cUsy85YJj7bQpftS1wyyTWNU
-					X3TwYhnUCLtLdmKPSyKLm/+coIpT2SnpeV0H
-					j+bkgf6xK1bLczLjKRZdrZTm9M0+GNFF408V
-					OnE7XhBejPSnW9Xh72nh14buL0W8XyyB4uwC
-					Nf1jJBOtofTMucSiHA== )
-www1.arne-bauters.sb.uclllabs.be. 86400	IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					g8YEXPG2LG8h6iFQlCDzJ/3pVZfLzVb4xcLp
-					qwSRkYFxsA/Xui5PJoWXUyAcO5Q3RBhR0kDB
-					lBAPpqkblSgLZ69L+5qU6c/8mA3h6slSmpyt
-					at5RdZqri4mkOQ99GZFBwknMyPTDE4ohVuK8
-					o87NOprS3SSXWYnxkofimeJiP8/4sYzkCSYB
-					UV/zYojntAcCsRBqe/V/Wq163W0BtzOK6Jvy
-					bJ2rGPXfmgTxnCCjxlx0o+kh4QP1O9RWUOHC
-					C8fNW65+GClQTQTt6Wc+UE4s/7sDaCqTUmro
-					ItyDnfEJoFz0Fkbb01dhffYTf1zar0c84c1L
-					kVrOPmF1QmugDD2UyA== )
-www2.arne-bauters.sb.uclllabs.be. 86400	IN A 193.191.177.130
-			86400	RRSIG	A 7 5 86400 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					o057g6d2Pl9i/YmFVv86yPjijrz5ibn2x2OC
-					/yZG8aVfkNL9ICT2FQYDbNgHmg+6ntpYDkeD
-					fM1mUXHn33GnK4Cmz4UDn7CGl3urPPjqDJ4d
-					bZ/R2iTlhvtBAuIgigQ6sfptXdFUNLdBgr4+
-					MuJSgF+1CZaznJrcJ5z/QzDxdXZ6NohP/pVM
-					qt5TL8QBOKZDq2w/Ob4e8eejjgPFHqKf5nSt
-					LQs05erxnmeRdG5m8NaN4pv8+WaYjotfX84O
-					FNpFGLpOO6pKO6X6OJd22J7Y5gtVTOLM4JLK
-					BeiGeKAFjXkyM3hPzCeVVSWZjIvdA7Ms8Hxf
-					HIjFfmuZULZYSKSYcg== )
-09F239CG61N57BMRE96R5GL610JI3KU9.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					1BT1BR26D6OHDJR0RIL3KURJBH7QH952
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					Z90iu8lX872lTPAh81DGxh7Ego+ldidWyPAQ
+					TQJp4LNQ1ykrbWAJoiilwJotcbmE3LEgd5kn
+					KZEmKQ0hpnf7xQfcp1HSpzROxEOOHyM7FaI7
+					fGcQwx5CziU9vGT3O4RbAW3kSZKZo05QuyyN
+					CjLecuYA2VY1GEI7XzfaCzrQOtZhATpBjxtq
+					J6Zb5jnx+vBhBAMPrgO4gMtYt+j0yBtAY3Fj
+					qhTwsyK2SB8h0BHirLsnTScRXcH8NtpCbCME
+					9OBMa4rZHNzCr+62KThl9BvQaTCMrlI+CLEJ
+					UBUU7L9/fZ0AIRBqyL2agKwWIrXpiJI9jbLS
+					gSUwgvK0Jx1HX6naDA== )
+			300	CAA	0 iodef "mailto:root@arne-bauters.sb.uclllabs.be"
+			300	CAA	0 issue "letsencrypt.org"
+			300	RRSIG	CAA 7 4 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					GOqBnPKPsQIz1ubW/sZ8AjUrhGFUyWQJrGfc
+					exwLM05U0iiUHma7utHTMVWgrJLZDwFFToX4
+					L+7poAydz9ImbOxz70xmMybtIEHcodO7Tmu6
+					RCTpOh37GQpEbt/8N7UxI/fKlkTkVrCyofaD
+					UBapJakorBL9UkdITSYl25Syd49b7wMZKmq0
+					W+/XIwxTvAfZrRQQ4m2w4+RorfKm9f3fjFfV
+					nAQBZrw003HpKvtWvFippx30xMldMYV49nXP
+					i4FVCqNnJ0D0hcej6EdPSXEdOLHCYsDPDH+2
+					hJzNrAOUX0sqv17FWniaEmTrl4kh79GsAvJy
+					3+hlj2+VT1c+7lNUMw== )
+mx.arne-bauters.sb.uclllabs.be.	300 IN A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					LYirllV2cHRpoqX5SF/anOVa0Dk8iiI1h7Tq
+					elX22ChpAWxYTCYx77moV37QkS7s9ZiJDsOL
+					JrQb+eN+FFzkEZorU0Li5QVOxjUO1sZDAK7u
+					nBfQ8Ju6ko539PmtFqDIdBYPt74GwLkStqFw
+					i98NyGrtpxql7lUeSEPeMzQ0gUOlztr6Ykaq
+					mqEx4w5D2Zow1QM9jdEDirRKZxgtLE06YnOa
+					GREGwqUV+1WGYRBVfKteXajyW9P86lA10sGB
+					+Adq4FCOnOFUwuT1rbnhNn9Ad2OoIcIbfW1m
+					50u6nZcKop2B09OZe8by9W0w9+goQoGYDbYV
+					8ER2CWSorMsmxXayvQ== )
+			300	AAAA	2001:6a8:2880:a077::82
+			300	RRSIG	AAAA 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					FzCcC6pB+8U1yztltRf84RqxZUnFij+ZLZql
+					nR26OKBDGYStmsfieebwx8RVphCurYFot/ha
+					3gbOSWLWV3Q6mcnOkYWcEYwzLG6RPw7jBauK
+					74U+xeq4wWvYlbtYbmDURRqvHJxvGEqvLko0
+					LbZ246CE7FGOLGcQsTJcE0nQowzUWcPhT+FP
+					1HqkUoFw7CdQHOPHXdfjCiu6jPtxDjJIrD2Q
+					B7DUIzeDMs8/5/kBog+pHxQxWsmi5MjMlXZ/
+					em+0FD+YpxYLTaY2r39xG7KlBXs8/WI1BNX4
+					AhLpoqrgJPMEfA6I1KqHKVEVC6mbNj6iYNcl
+					3fMYhcFgAb92JacLyw== )
+ns.arne-bauters.sb.uclllabs.be.	300 IN A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					tO85zerx2+Q03uhsywBlwCphcG8BNTqUm0uN
+					zczw4jt6VFr5wDGyma3XAv/+hlq92vDMmaWk
+					7z1ve/lB1JgtA1DgGXGSgH2OlLXCFDrJxmWz
+					jLLoQLwKc2Br7B19BHrY9zzekGn4aq09/e2p
+					h46rZhWoahFrKDwt973g21gqPaRLJPl6pE7/
+					UAbRntEH3Ezk85RVwfPaSD9PYYxVvzAHgNav
+					AfgbguXMmydskyy7iVUbxwFPnZCt8GYkBaUW
+					aRuetwWIBPBJblaX5+ic/73LYSgeXQnUXNem
+					JJa2R4a06XWK349tfFEloL6lFt1vf0RVEnCY
+					Tq2kRKyP2rwdqOnu6A== )
+			300	AAAA	2001:6a8:2880:a077::82
+			300	RRSIG	AAAA 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					H/Hh/n0djFXyX58vWQ4I+Fm6A8TL/RLL8zo4
+					p+38kb6GwlYs/nl++YfcE7f3slDxFUfs0ohu
+					tYDUbN2w7EJQufLUFL4ADk7zYjyko51Eps73
+					srJ35fVw/UilPU8ZmBteKmX7vVCXHbPMxvqe
+					+TuVFE3iCR7RkZ1YXNRGm3FBlgE+bc4n0suT
+					fsFOIxSg2RoWkSsAE9hqMzvY/z1Qmzh2x21M
+					I6qmYoPWXlMP44UYlAaYm3myretyECi9WOlb
+					OL8hrOe4Xv6CKiMG7bGhZZKWdGgFd5m+acxP
+					tVF4Imilgz8fDfgBiNP49Xd7Krbtukaohi1e
+					xmwHZ8KLBSU+jFbb8w== )
+ns.sam-arnalsteen.arne-bauters.sb.uclllabs.be. 300 IN A	193.191.177.176
+			300	RRSIG	A 7 6 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					GUQjuQYJocSH7Gj006/bbW45Kcp9lY90pmfi
+					b5lTvmN5sXfoosYZ88OmCdihfeXA/83RAEpn
+					8SWTXjVp1nYqtoB/Wa5zJGvBE17aEPueVS5f
+					wu29hNzRlLjquN+ibrmg0MKlCS50es13VFvs
+					yzL7EMTjQ4vJ05xzUpeufd3qXE6YfgxDbLRa
+					kISipQHfYl5sRZKVb97jCrsB3DUJfgLvQ0Tl
+					DrCCWRLz8b8xmXbzYsn//hpcOLica81AsPTk
+					Z+mbU78b7QVheo+BN/5JlJN7dg0IJbUeXCcJ
+					wgK1PDZC1jUwLF36t9AaNRmmFegE2KQKpo2U
+					dCfq//4Pos/c0P3RrA== )
+secure.arne-bauters.sb.uclllabs.be. 300	IN A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					b1OEvjMQs6nF0dShNC1ZNVO5rFwpURAC/GYp
+					3paSeTn2mxQtO/DDmTha9yKBQ9qW4nz7OkKn
+					MbpEerAAtDTv0OZOmJtg+eF2SS41Z/YtOgDq
+					VrEweDuSp8HaFqdmkeyHaySdWSjnkRIqHi9k
+					RFkxcU6rH11atOa6cUdF6GVdxJi0rAQCSTKC
+					KY7O25ffHL5A8C6Kp50i1HJtliNRylAKOULU
+					HtWrOiTszMB3n7Ri7x7jNQYn1WJ0SWSNoLvN
+					bmyn0O3lKFM+4t1L0inaBCL8jJvbjON/W0RG
+					zfv4p52GvBxFrvL5eLgtFH1aAAqnuvM8AxR+
+					BVgOOATZBcP2Yo6k+A== )
+supersecure.arne-bauters.sb.uclllabs.be. 300 IN	A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					pU8MV47WC7E8J11ucE8/J5FAVjcBEPoKlMbb
+					c1e/ZpZ/5jEaKunF+Zkn7MFs5kRPx71z1+gU
+					XCym6ZvDQfZfORpshUiOJDUZhxTIk6k2rBFn
+					hLdjl0jvQHn2A6wyNd/ftrE7OAMyDL3hbkbE
+					6BwanIp05EZ788ysT3xBGT6vzRbsk2U7ZxP1
+					1vuH721anSntYTt1LZT88l5qoZyTLP4IuHjo
+					BkPUk3BAA2c0eP0rlL9t9CTzO92PMAvo3eTX
+					FEkZokPEzRuJJVPAqlYEO1YvWeG9fONB4+XI
+					ErJBU/QO4xYC9KUZ4Zu2Ff0oS/OYFmVR6ZRj
+					upsKxALMJU9/WTCDTQ== )
+test.arne-bauters.sb.uclllabs.be. 300 IN A 193.191.177.254
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					DNIvP9+J7ZptL8k57ivByoIy7/Piol67zSOM
+					zwljnpQVdkSHNrV5afPk9O5DOADFsXnjureZ
+					eQBcL+mz95WJA0gImJ7gnYuBvDZrQ2QSghTM
+					PQRWcGTXQlpBWuOoWFMdTX12jzKtv3IpXkNY
+					4vRt1sRdjn4FrV2yk4xhYIwBl76knEAbU5si
+					zEiiei7pVu+uht/vXjfSC64H8TjaYVq86hBd
+					k3GyRbxqbYawjDDFUN1M+gwpO9tK1ewDa/nw
+					yMZIR6OjE3ZeVBs6kRgvxwdkDeFp2hIuimDY
+					mvpnYqOu1hQXi8564L4pvl84x2EQtrSx4/Ky
+					5sQajrwdShU3AxYEcg== )
+www.arne-bauters.sb.uclllabs.be. 300 IN	A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					nXfo3IKDaU+BGIIJqwSZkpD59ihNJfphH/Yd
+					Dn/l7uWhOe7II5tt+oPmSQVdJjqnGmqtu59d
+					reF6RNl7l0gcyLKsDl79vTDegfSZzux3zWGf
+					jLcLfRQerUkMYeg1NCP3torY+UZu68SRpwMw
+					EIpM8WRZFJdvyqoOqa6c9QLsA6xRbu9R/BNX
+					b2vLIHiDDpW8FktEjJ6sH0tbhaAvr+aDQfhj
+					8HQ+mB9T4N32ah5qhODgVc8Jl3InVHNCmFw4
+					YhqZeF8b7/H9Qcm64AwRl4JAgYKOqkXgFx74
+					G2Y6+lfvLki0jzUXII1vpNbX4LSWL5CSnB8u
+					TlCoOvT1VVs4EOefGA== )
+www1.arne-bauters.sb.uclllabs.be. 300 IN A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					bAJG12BefjCSB1tOqg5JH27O88goCkncgofL
+					ZeMDRYesf/1WO0AO/bkO0N5Hbuep93gVll8M
+					I06X/sPpvsZkYPoTkzTRVbM/YtwMcIBf4/oB
+					QwmJj3r55qd+BpV02ez5YxSeXouw4+yZeZ6m
+					y33rBEzzalQQq4wpLtsSZacvsVmEydwREcPW
+					nCL1ESfouCJnkwbUGDCebK0ax3fkvK0oLFuv
+					CiJKcEsFuvU5FwUtJJGkKpY/pbJgjUJZfbtb
+					rbETxcXahzqxE0w3MS2CjrQjXk6f3Tdw7Rtt
+					mv2yZzyjHjvq1HwV9JEPhaA2NyKCKtDEhgPu
+					x0nG1vuy+1mLBr/u4w== )
+www2.arne-bauters.sb.uclllabs.be. 300 IN A 193.191.177.130
+			300	RRSIG	A 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					n1p5GO0t102t+p6UXAvmaesHvZHfHDgNF7t1
+					mxosp4IJslveDiaMppYUOpHQGSEa9H3uvto/
+					cgMwVvI1gew2lPmucv7KVnEzBrxSP93GBttF
+					RlDYVJzaQFMq9u8EHeK7WVZA9RRdyFLxMdLk
+					+VWQoczH2QaUnEsa3SRqIJ6Vwf2iIJjePK5C
+					9/4B7neBc91pyHZz0E7gGhRYLh/e1pdGmGix
+					p2c/N5a5TEwLhvqFDd6IxWq+Q9oiq++b6kRO
+					VLoTjFTcigkr6J+VjeqsTnnFTfLLg2tNDNFW
+					g3pTqbHln0McgElbntSvEA362HUhYI5rVwEb
+					v/4SdMU32+lZ7JwjmQ== )
+1F5GQ1PUTCIU8B0IU3H990VVHC8AO3SQ.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					2TVVBHGJ4PVGVDQ5G2968TB4F5KQCG0V
+					A AAAA RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					XU2QjBBK2UXEhZkqCJ2C7snxKzATKgbopIZf
+					ExGItCdogkw4Uj2B4AqnCMcC8oLzxPQDLHC1
+					TH1bj/frZuQwDuqMx9ZHb37SS2y91pHTMBRM
+					js0wb0R0utD9luQ9AhoVNjqCUHrC5bU67osr
+					fivsMwLO0dBS7i2EHOWEYS0S5xoKZ/cHdMof
+					1ctToB3oWHfWEdl5HLKnisBXMIShhF5teEsC
+					yxGNvIe+1oI8Exc1hOmAMu6nszb14oG8/C1h
+					guxknl+Q7RSkTFhr9bUO0Wt7G/3Q4krGSvnj
+					W4W43IBbSYoqCh2ktXGet/FYM6hemjYaUiZt
+					tCzepRtRT8dFpOE/Kw== )
+2TVVBHGJ4PVGVDQ5G2968TB4F5KQCG0V.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					6LBSMFKTQMT5LR4153ONFAIMNRCFLPI2
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					P2H/9SPi7BDjcfwsccckqAvXiBDGF/gNlhjE
-					AAUAW0tp5GNbIN/52ZNvMgKJm6nabSAlJnHE
-					SKDosVKrfZc3x/j/GSOUMhT36RJb1pQuy3Vd
-					5fzLxRe457G2m+u5cUVoPKLWawaZDvbqyOJt
-					PPcZTC8kbNw33aWJRWssIkoBpymMEMBCOl+0
-					FcXBljIkUuIN2yWbHrlUXSXlEcTIwgnPTvYw
-					mS7BSfXZ79BJGS+TI1DhKWjUh/jC2HoiZTT7
-					dtcr7JmiToFaSeT0ka/SQE2jlypLsz1q35nh
-					jRAGSJ4uG5Ite8UuBwc1NbOzi9B4u/cN4SKp
-					/juIrHmyxUbdroW2cQ== )
-1BT1BR26D6OHDJR0RIL3KURJBH7QH952.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					2768DBOSMCFRD83JF494E72M1RP5QUHF )
-			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					odP3KFHrQVS5LfAel4myqmy4VsqaUpHNFdWd
-					hR3Z3vUiV3qPdJK/FfSWcVmj7kmCc4206uHf
-					1QROqd0dYVNbTFCRNshitPIecXXazMn4NGVd
-					W3QCaC8H7b/Ul04KcPWGjjfnb5I+el3mF1nE
-					FZNF6udSUa9scgG1LSwj6WHoGoJHpwz7CF/1
-					wbs+bzFDY4GRCRi196vGS2IsPkKiR/NB7G2B
-					nGKTy6h8b0v1B1ix95upuKTUW9TrQaMP0kXN
-					txcIpZfVMn3jnl0MhUQH7INJ34FLQRPUejMf
-					JU64/mwW1ElVgbMGvM5j7rlmSG2YspzVs1uW
-					pNdYx5wbnioDluicog== )
-475JRSBN5B9B9VK699TJANPF4FEM59KI.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					8UJ25TS9QBHKKN9E959HFUP5VOLJ0248
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					pN9ZFUzhSZ1DChOfbmy/kD+uz2uF8fgJiZp9
+					sOmdjEG+LGOfAH7PrDmrlt5kNqFBaGvhzOz8
+					K+wpt/28Kpv5Ho/kYaXqva6MywfhXfZyGJ+n
+					maXvqoyNWST1a1hab66rxqJqG8y5NV3oWmli
+					gP+uuzbTUCz0DPzX8vYCqkEE0Rdz4RAEfq05
+					2KFGtK013YZvQV7zLrj1ud94bNiPoMWO5AGA
+					guso+AD7FlhIW0do1HcxcErW2RQB7Rd4+0sg
+					74qz6DtzeWqRqjxUBU4PTWlz+CST9WQPQv5q
+					pOnSoZIKX++NIHBAJ/xgOYwg8cLXOlrlWYkJ
+					AbioBqTsK6Tdm0TGDg== )
+6LBSMFKTQMT5LR4153ONFAIMNRCFLPI2.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					6UG8BL5IU2F3RPEPDM216FBB36GS12BQ
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					Jd4jkvkP1+IHtKLG7yhxqGlgGW1wfUg2WLoR
-					iEgNQhoxtkxOqPS8YK8SZdrqG9H+/It/k09g
-					G/nlHDL9e9I3/qQz3qCgs5FYQWnrjURasigs
-					YVUWCLOfnr1vXAjGOJU2SdJ+eX+XPEF9L5cg
-					8DtJCKnZfW5QwXhSz+WtiJbS1rrHtf8rV60J
-					Eg8Ln1/FPD24oDUtFkcaOSn0RCPsDjOOX1yK
-					1ayBvY0yZITj5bE4/7h/zoIkqdH1kbaOBI03
-					SwUNLA/rBAmxuxudf7yn+VY1v+z6r5OrR17f
-					n2SV1ClEnZhbFLGGp3qBedG5VXlIj3JURImV
-					Q+ixu+ShSNGZsWsixg== )
-8UJ25TS9QBHKKN9E959HFUP5VOLJ0248.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					9QBG2NQT26COUQ7FN5I9RHHITCMNAD05
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					WSWVVLkf3ekSF7UL3+5ixlAej8ms9RVI8etU
+					fdrjSbco2LB3P3Z5zGEfg3DDd3hosf71W+TG
+					Yv6QqHKRsm4hVWtTwOzOFbSAFE1aVhLf6STb
+					noHsEkLQyAiKtsmVbjxlCBMrS7i44k+ocZIf
+					WQzF/t+xe72tYnQdUoFBxmgffFWtS3LcljML
+					DvgmkAQuzlR3A0WahqYHniU8DiU+0lvkKL9o
+					VGveZ6mD6/+ajLfBVxIN2ZrNehLs2kU5c0nd
+					DkG5iYh8QUhQ6+oJ6MqtttPJVqcysEfxR5Is
+					9LAUVWzfcsSfQRpDbctRSKiVRs3sorl9nUia
+					4drNUSutHV9JCPg4zQ== )
+6UG8BL5IU2F3RPEPDM216FBB36GS12BQ.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					7G9TM9FJUJF99A48KGTA2DBR5GBN9QAJ )
+			300	RRSIG	NSEC3 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					pzHewlrLc9MixMatCahnxEzkAOfwvCRcrP5c
+					he3RWz8aGxFkBOr3MwNTIHImilTDQYDapdfG
+					AHsoCRQ0Aew03Q5zvwy/3wpfUZsubE2gymCu
+					6KvoeeCWX8ifeDeEHbV1mKerNcissAO7NWQn
+					HQX0ERBHdHjzGxhlUxL4uxol/M6DnzlgWGe5
+					R8nX5+d/+JxVaJTgwI0WwGEGw1zpa7t3DJBv
+					3bgkjDFm9Vp40cuIv2vMuvJZzNwEA+ZkwLID
+					y9OfnW9Ui+i3kzIQDMrssCMUnOoC2JriB1/4
+					9gq51B8B8NSDz/HUdlDY/imhrXWWuRjFYPyK
+					Qg1t6y3NGGyP03wDSw== )
+8CIHI31D3KE9U2N1OTDJ1UDMUJKA5CIC.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					E589VG60I37B711KR0A3JL87O1QHHJ7K
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					HJJ1P0W3UjH8FcbYHWW4+uDqBUYBNBCEQ47B
-					CbyNWOj0whshEVaLMHjrMUmyzk7CFQ+24GCT
-					I1n5RKHoYyehoKEuFqMh+f2Is48dG8BnWEFU
-					w2zu7OkymWyf+CELtzMHmM+9o2CPwtUKyGjB
-					ltOWNEOoAlbbUs027YIpRQbCFLwwL31icGnP
-					MWvxcc59Bm0/rblOMDS9W49/2cEoFqvhNi15
-					01gtgnexL4HHSteJ2W2UiRZpN2XOXl7VjC6C
-					s0mwYlEDs+KSyeXEwWWhaICCH3PMmkXFwpjK
-					t8bdwh+wDxDTjjK4+qDcK6U2iPcO6P4nQ0YD
-					epggtJ+XYj/zDtH8nA== )
-9QBG2NQT26COUQ7FN5I9RHHITCMNAD05.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					FNF0BLVG0IVDGSRR0OKBA74P08TAK7L4
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					Lc+0iLwfkuKRSpw/45wL/R6Y0Hk7u98B1JSc
+					czhrnc2KqncDFd5wjjszjsbUoqBQWCD7uwWE
+					Cm3vy1CTSI6eVc3+O2k3gKpxukwEITH9/vBF
+					esMdtX0OSj8pl2X8eVyF3+CmEUcGRXMT0T5y
+					mEMVE4IDQkpXLpsBDQs4k2pV6g2NZ/dksVqB
+					crsV2gz2VRuTZx6GmEHmSGumi9fvd/WYF0Q1
+					P9IkTiU28xZmKehl7qCHUd21pAhIIQH92m9/
+					3rJ8DAhgVLe6idg0i+jcsudMHhuTdOIFYpfB
+					RF7I4aZyn4EqMO2rjw2ahN+MBcAokMx+W6cb
+					phJJapPbr16so1I3TA== )
+E589VG60I37B711KR0A3JL87O1QHHJ7K.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					HPV5HP2D5JJTNCFEVB4TRQ804KLTMDKN
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					nwvipCNLLgbSlQ7MUFO3izzW64hiCebjRBIN
-					bw05SBoatMxNlF18oKbJHKZ0A59YhJ/g84c+
-					tfHYaZqUYue7V6jwZ1gsMq9XyRoAQdIjBD5r
-					hpxmq0+lAwGh1YnItrfSxllK1Fm+y+IwVvIc
-					fRYqqieJZc5ppAn0RGjlbTQwoGQLhbrg9YV3
-					nbafb4CkbJY5YsGspZaDvx1eRqim6761+Dc8
-					4r012lOwUQzVq4aSlBHZrRhvJOZMWadM1rFr
-					IPFIK8EHpRcCPS8EnNGj0QtlTFMNy78ZlEes
-					du+YNE4ZhiQupEk+THDOZJzGoDaLzPlK7AGG
-					1lPItCCH8Lqv0GER7Q== )
-FNF0BLVG0IVDGSRR0OKBA74P08TAK7L4.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					HBAM734FE2SEJH1PF7FM79KS4PTDQF1S
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					o+6chqNFrs3rRXv+o/6RZv31/AVf4Z9DeDIf
+					cFJYhZyTx6pfGMUokN91fDakfadBHS19e9fM
+					xPpGcnEMW/DRDeP0xMZ5BBnJV19Ig26j8L2q
+					jLyI33TNPYgH1oBKeU4kD6MzqXFk/kgU3L9n
+					O+M/0vIfJL2S7ok2j2GBYpuMCxBWR+jorajV
+					pN3qLcHZzxykb/zj/BmeCSp0kVwrWgazAQQK
+					k16eiKTVcGWmb7Rxlow1WuFVp3fme1Kxlp/W
+					jDYJwwTN3phIicRzjgtPVa9Sd3XEsIHv61zR
+					w1EFkpmJhn3VKaRtHqYOJ3rNaMfpjff4QqHW
+					AouYGCf4hbzM43hr/Q== )
+HPV5HP2D5JJTNCFEVB4TRQ804KLTMDKN.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					KM1PU5DGTPE01C8M16M5SGK13UEGGAQ2
 					A NS SOA MX AAAA RRSIG DNSKEY NSEC3PARAM
 					CAA )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					E7xhM3Pa9qazz3LcAI3uAUIVCGxMwv2qU0TD
-					MXMjVodj+x+jFLqRIRZbvUFh/dWG7JVxSnH1
-					rFlw0FA/UZs+RTfpPfpWODX0loGTZv9rh6/p
-					AgAlk/QH9lS8BZrC10hDy7p/jqqr203h1o0a
-					JG+4wp/ryfQPlZEEdmngQI4GJ0OyJrxVeoBT
-					VPXppx0ky+pDtuSQO8cr3x1OVzJn7wMU1FM/
-					LGjEXGnfC47gQSbdugaF42QOYkPRGElfum0D
-					SVw9xpxx5UuWeRr/JCQt4GmkMWq/XBdWDqZ8
-					3A1+CFC6IpVo8GnRBMgsFhULj6pMozauWIh/
-					yqj8sybZQDO0QqDksg== )
-KR2HQ90EGMFIRGBD0ISK71NLIJ9PEIGI.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					PGGTPA2SGK06O3TA71CMA2566SUUSPRT
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					MfeJTUHLChSVUH8M3POhf0S5JDVlVGJ0jI0y
+					U1S0KUl2CnJyOqziqvwLhd8JQLCh+CKNm+gf
+					juka2wmwtkx9kwZi7KLctmeyY6UaiBqi2ibT
+					PiMLNaCffPPHYtF8v4IRM1pwh9O8wJrmgiRa
+					lQJAHaxC3JkI/bHRlTyyEJS8P4SpCvgEV5hc
+					4efc9j+mYhluHruUJZG+Yw7b4m6C/elfQRHA
+					PyzCk8hOAxrByNnYlJGoIB5RO5IbzG/+1GyM
+					Gyn6Gy2zITdIRlNWd7zhjC+/sr6x8dHEfCt/
+					iIZ9hhLI8JofdsXLUYAYIv83JUNKKQLpSR65
+					K04mn8Mg8y5SLIjgcQ== )
+KM1PU5DGTPE01C8M16M5SGK13UEGGAQ2.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					RVM2MMV63T3CDSCT2M711DEAN1RT7AC9
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					d4G1yTXCJ0ELEl1asoSAQrsgJVImiFI8eI83
+					wGpF4rwpetiYSiSxbAEm9WxgUHND32wtA23V
+					IJiXLNAgzuRw+j8XlfmfBoNl/093D1fZ9OvY
+					J5Wo1kK7dJF9ALA+9Gl63aeOrufjW/jV06q9
+					PmwXUSFiZnu+vdCJlD+6tfW/JQrhCm5pbBu+
+					uaCMwl2pjjwEHIdc+A50mSwf1/a8BI0vziRS
+					lg2gGcR8sMQ/uSw+mup35oYDx9RNVWoU9D9m
+					d5wKG1+fwhbuV3P99Ra6x5l6wg50PnroO5fk
+					q8emmGoG91xDM36e1oSpPHpZrX0VE12/WKlE
+					75FXLNfgwmgOVRWi9w== )
+RVM2MMV63T3CDSCT2M711DEAN1RT7AC9.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					T59UR81ADL2156DKBLO30UAKGAMAH4OJ
 					A AAAA RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					Vg8Azd+DZxxyIPAQfmaK2E5NZdDDSzTpsEBt
-					zQSbvEtM6gz8TzlJGVAB9v93Zdh9nc8vwQna
-					BmeNi9jlNccyqumuePD6JJpbYYiEGZy1TZIX
-					qR0LTDln1IZtYZdxdAcuAaPD71UVClu1ohKI
-					6cu2FslXUcA+qUO4WPsSt2602SpNF7lOOJTE
-					eBfFHg3NN8mdEw3dAlcD2gtVKXtWEQFGf+dj
-					GicjOUhjJ7Tgx+LXergkjXQltzm7AGyzBDie
-					QDf4r7lyxUt0yUeNXWc0O1oBDWvhyVBE+xwn
-					lcXB2M9MqLZ51NskW71NS1aViAVB06guXzum
-					7MVyUFfP9WGnpQ+iHA== )
-PGGTPA2SGK06O3TA71CMA2566SUUSPRT.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					TTVL2G9GSTG1CKAM4EVUA359T42NCPPU
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					DNz+nZ+CYoxoqyXywpcjDNWjZMhUtlT4I1JF
+					UPTSpdWacUjxpcg+amSbqHBeqTX/WtinSgs6
+					rCLW7G6Bq1kW9+WZ46rgYzmchsY1eVaaPfPo
+					eyIpV3OlZoeZkGXSOGvITSgdJ+IYfSMfQyhv
+					PItiiLn4hApfrasZbzK7fRFkG9XC3EpRsYTt
+					2BZQay7lWhX/iQvbfaCIbtRzt7UyhJ/R/JuO
+					DIWLTnLxHRKmzJbmNDwsKGao7AT+ZRbl4Rr6
+					ZMXOAHoJtNy5W/8D7xAkRLFudumxCaFHNYjS
+					c5IiJYJMIrSTW4pwG1LSr3JC+UebYLruPDqH
+					QzWLE+t9wa6gqOc31A== )
+T59UR81ADL2156DKBLO30UAKGAMAH4OJ.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					1F5GQ1PUTCIU8B0IU3H990VVHC8AO3SQ
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					T5+IletKY2RT3vptw/rGdJFwgjNUp3fPu14H
-					92bWldcb7Xh/dwdwwOYCxOR2L5AEs0ksMeZt
-					uBVAw87250+HE6yJObWjpLxViLXqTGN965qb
-					JAMhqrKgJ0cFLLrU1YSeSg1vvwnAbeCIni1f
-					+IGUprRdBedsYQ+svU5kkDiA8aNzJK1tNW6a
-					da1H6jByvaypUTT1TeiqmRO6gzZc/1WTv5oV
-					Ffx2oOBPwHDoAe4o6P33HQOUeUE/YxTcCCl2
-					5n7wuljvNIrSV1YtidCDeS6jBBt7UIom+4rz
-					E++CEkPk7wLl0NIrzmqci/Q+SEah5kjaRzYm
-					EVirSH+BQeu+5k2ANg== )
-TTVL2G9GSTG1CKAM4EVUA359T42NCPPU.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					ULP34PNRTUQCMGOMTV3N3U6S3MLC6MCF
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					j/loQKFrO5MN6yf1JcGsdpsofNJvv1yrQA0O
+					vw9iof7deaRJ7gecOXNK/c+SuVv5/8zt6KIb
+					chImnNUGZEp2Hq5KWhaHKrrZ5PIWqyg9Zy4W
+					w+crWJZ+ACPv5EXljj9atbILwokKBMoSmXqw
+					+Pc6YVZr1MHSa25+hOW3CHoGSqD4gR3wGuR9
+					6y6kQ23VPFKIiDqkIdrEBJKAtMAaj8cQw1MJ
+					E3+Z3R2y+PAeSgobmol9Qb0f7UjUiHO4VX8U
+					Cmxh2D+iiL/JDre1Hsov3QZKepKKS/2tw6Zg
+					wXb8u7bauTrQc3Wt/B8v3ntvv+D2L5plw5Mw
+					2+pADioSEDwZO/dUdg== )
+7G9TM9FJUJF99A48KGTA2DBR5GBN9QAJ.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 9E20E42EC5668BCA (
+					8CIHI31D3KE9U2N1OTDJ1UDMUJKA5CIC
 					A RRSIG )
 			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					BoAtSag6qfb14ogLpBtjsZmybFbTc30WRENS
-					6FVmBCdqdnDtTpVqzIsajFlDe77570mB/6cP
-					f3mDoIbthUg0BOy32bQzvkBfXyktYqp6pwhL
-					fqilVeJ0nq/qyW9tnQ/oDDfuiweZKxc0+OoO
-					x0VXhEfGqkK0dMZfzl6dHL3sReVT538HG/d6
-					3b9CaGXyynYCMTTm8bp0htQfitoDfCBa75D9
-					rhdmzdNKKCC3dCIyynWXC5Y2Po9xFqqT0GRi
-					IL7jO/6ConF65Q5kSsao2kkEZu9s6ABUMSLS
-					nHr22mSiAY6IGEqQ+j+jOGg2Qf3NPJaXOf7M
-					VzdO3DurAAdvsv55TQ== )
-ULP34PNRTUQCMGOMTV3N3U6S3MLC6MCF.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					VTB3FP6ECGE5FJEM9HQO0911UL7C89V7
-					A RRSIG )
-			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					bGUJoOEirM1jsqc6ow3FttIFvOgXxpBgbHmJ
-					c/XNhVNNOcect8shiTQ/gVyCmPnmXYp4cbvN
-					byvnH8IXDH5wngIghPv3vzVKHev/rGa5utBo
-					tGm6gcHomTrXlHd621/Uf6bwq+oKBgMJr967
-					DVpgLqpqfSIPFU2Q1q7q8Und09y3aekD8g1H
-					BZq9qbAjRyoLr88ukrww2RNfiq2S+tIVUPqH
-					92v3K2XVE08CnrDx5Bz3/Fsh24zQZ+5yyIn7
-					TNfryPczwqApEg8QFnjIfJTT7assoN8I07Fv
-					h3X8tLO8MOfGIHYHnAwEF9kWhAyZAh/jx6WY
-					TpwjbaqXD12HPUvr3Q== )
-VTB3FP6ECGE5FJEM9HQO0911UL7C89V7.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					09F239CG61N57BMRE96R5GL610JI3KU9
-					A AAAA RRSIG )
-			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					oo+5OUhS/IjZyx2PL6NLp6qBPiFsPM3ZdgSd
-					MuFcjmZtvLgvPKVpBQ8HRIIsRHUahPQowUkk
-					LzEZIjC4ANmLD/5IF+7f5jXoVCkXy0Lq672f
-					SWPHzcqjj2GgdAYOE5SOK5mFehBtQ1jKQLc1
-					zSoqwi+7aI8jMK9xXLDR633RLpDKW2kZxfFo
-					RJBntzE/2vx8vlYu++uTPnvqL8F5AVD2Wsfa
-					08+vPudu+jhokRshQut1qKPJLVRDoSzH5J1z
-					Ij3IHiuV8Jhm6nl/LC0VtiLwG4JC9t8al6Nu
-					wYJz8ct8MYmplR3tqn9V1icIGCN+Ax+X1NTL
-					v+WtVaMbxUpPULY2PA== )
-HBAM734FE2SEJH1PF7FM79KS4PTDQF1S.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					KR2HQ90EGMFIRGBD0ISK71NLIJ9PEIGI
-					A RRSIG )
-			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					U5C/rlUfzJtXPkaW5DGcYI1l9qa8qmmCKQWW
-					6bpGBHZ29FmnAVWz0h4zrmBFlBkgYoX4IJ8G
-					dDUb1XeaPkpejtmxcJyjb03uaJXUeJ6AdO1+
-					c9ag0OCL/KZ5Dg1wPJcOr9hVJSLZIZR8pDup
-					jDV4rqFBjdVF4IqBqKPd44fhKXhZQgHr4Bvn
-					B9WhXclwKCy//BhprV3XHYrEZYCrCWHZX1xR
-					H5RHyKVGpK+U7EG16idsyE1Lk1VwX9O+64UM
-					Q0TCULdfleBfa8lb/yQEt0cVqEXlEmq8Swhm
-					VzCFxOtoamC9tPHHZ45yh6jYC5fsAjMel3c3
-					qFl3wm7LCC3rTxKYGQ== )
-2768DBOSMCFRD83JF494E72M1RP5QUHF.arne-bauters.sb.uclllabs.be. 300 IN NSEC3 1 1 10 F7206C9E263E13FE (
-					475JRSBN5B9B9VK699TJANPF4FEM59KI
-					A RRSIG )
-			300	RRSIG	NSEC3 7 5 300 (
-					20191126162758 20191027162758 7529 arne-bauters.sb.uclllabs.be.
-					QpInGLMNEznulaB/qvfcv0PvAt0x/7J6Owi1
-					YDRqL6f4EPHM7eoZ0mCl/rdjJqprJ8jCV6Kq
-					dDAg0jVIyNvcQ7dVsui0qvWmDW3FVX6K9Cnp
-					vmLeUhjct+2i+zUhp60YvYiHYbn4KeWKcd/h
-					OP75SnDkcYi9pYE25zDoEPu20UFDI2BA6HLp
-					4vRKPhFe8lKZbG0A360kMpS1Y2uHDqWE9vt1
-					Iu2Pslby7gZOhxkb0RE2m/2O9F3pfH/6OGpN
-					PTS/KIp2jc+dJa3U2OFYZsu0t0aTZrU9BDmk
-					i6w1WbGrmfCdxHDFJlIvKct3bd+uVxBU0OkN
-					5kJdHnJtQMH3/NYGbA== )
+					20191210121028 20191110121028 7529 arne-bauters.sb.uclllabs.be.
+					d8lusGVDNsFIS1e6fNLuJ40ZV5U/v9LE+2e3
+					Jkh8Cb54RPwHrfbDbB2R0e2E8zGjfhX7N+Tt
+					xfCFtDNQIpGSFa1VTsZg9a7pNGO1UMtzy6ym
+					EV7FWx2qRxz0YpY3bGYvLZpOz6UdAJBAd+oJ
+					kaGJbVOMEUwp8ao5PBiSjiyeWSgbPwsvhp8h
+					Mm9gvxIQg3qKj0S+CYUU56q7q9aZ/xwttFpg
+					XIJBn3XTPDZacuhqfNwTt+b/dt8iVOFwNTJZ
+					FIo4Y016tToTbQpAPH4oBg45PzYiIXq+QBgk
+					OfpqRL0SAtvN0kkYvfV8vrVLgD6MDKcvoKx1
+					WpLHHmoT5vZ61wd08g== )
