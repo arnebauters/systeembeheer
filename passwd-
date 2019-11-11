@@ -26,11 +26,11 @@ sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
 uuidd:x:107:113::/run/uuidd:/usr/sbin/nologin
 check:x:1000:1000::/home/check:/bin/sh
 ntp:x:108:114::/nonexistent:/usr/sbin/nologin
-bind:x:109:117::/var/cache/bind:/usr/sbin/nologin
 ftp:x:110:118:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
 mystery1_2014:x:1001:1001::/home/mystery1_2014:/bin/bash
 mysql:x:111:119:MySQL Server,,,:/nonexistent:/bin/false
 dovecot:x:112:120:Dovecot mail server,,,:/usr/lib/dovecot:/usr/sbin/nologin
 dovenull:x:113:121:Dovecot login user,,,:/nonexistent:/usr/sbin/nologin
 vmail:x:1002:1002::/home/vmail:/bin/sh
-netplan:x:63434:63434::/var/lib/plan/netplan.dir:/usr/sbin/nologin
+netplan:x:63434:63434:netplan daemon user,,,:/var/lib/plan/netplan.dir:/usr/sbin/nologin
+bind:x:109:117::/var/cache/bind:/usr/sbin/nologin

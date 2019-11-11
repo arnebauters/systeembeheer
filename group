@@ -54,7 +54,6 @@ check:x:1000:
 ntp:x:114:
 incron:x:115:
 netdev:x:116:
-bind:x:117:
 ftp:x:118:
 mystery1_2014:x:1001:
 mysql:x:119:
@@ -62,3 +61,4 @@ dovecot:x:120:
 dovenull:x:121:
 vmail:x:1002:
 netplan:x:63434:
+bind:x:117:
