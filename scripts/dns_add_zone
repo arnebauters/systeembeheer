@@ -39,6 +39,7 @@ SERIAL_LINE=$(grep -oP '\d+\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclll
 SERIALWORD=$(grep -oP '\s+; Serial' /etc/bind/zones/db.arne-bauters.sb.uclllabs.be)
 sed -i "s/$SERIAL_LINE/$NEW_SERIAL_NUM$SERIALWORD/g" /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
 
+cd /var/cache/bind
 dnssec-signzone -A -3 $(head -c 1000 /dev/urandom | sha1sum | cut -b 1-16) -N INCREMENT -o arne-bauters.sb.uclllabs.be -t /etc/bind/zones/db.arne-bauters.sb.uclllabs.be
 
 rndc reload
