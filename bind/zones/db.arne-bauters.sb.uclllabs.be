@@ -6,7 +6,7 @@
 $TTL	300
 @	IN	SOA	arne-bauters.sb.uclllabs.be. root.arne.bauters.sb.uclllabs.be. (
 
-			2019110911	; Serial
+			2019110914	; Serial
 			 300		; Refresh
 			  300		; Retry
 			300		; Expire
@@ -43,3 +43,5 @@ arne-bauters.sb.uclllabs.be.	IN	CAA	0 iodef "mailto:root@arne-bauters.sb.uclllab
 
 $INCLUDE Karne-bauters.sb.uclllabs.be.+007+07529.key
 $INCLUDE Karne-bauters.sb.uclllabs.be.+007+14115.key
+
+subzonehoo0le	IN	NS	arne-bauters.sb.uclllabs.be.
