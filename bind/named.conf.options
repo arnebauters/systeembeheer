@@ -1,5 +1,6 @@
 options {
 	directory "/var/cache/bind";
+	allow-transfer { localhost; 193.191.176.254; 193.191.177.4; 193.191.177.254; 193.191.177.130; 193.191.177.176; };
 
 	// If there is a firewall between you and nameservers you want
 	// to talk to, you may need to fix the firewall to allow multiple
@@ -11,7 +12,7 @@ options {
 	// the all-0's placeholder.
 
 	// forwarders {
-	// 	0.0.0.0;
+	//	0.0.0.0;
 	// };
 
 	//========================================================================
@@ -19,8 +20,7 @@ options {
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 	dnssec-validation auto;
-	// disable recursion on authoritative DNS server.
-	recursion yes;
+	recursion no;
 	auth-nxdomain no;    # conform to RFC1035
 	listen-on-v6 { any; };
 	dnssec-enable yes;
