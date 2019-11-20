@@ -62,3 +62,5 @@ dovenull:x:121:
 vmail:x:1002:
 netplan:x:63434:
 bind:x:117:
+elasticsearch:x:122:
+kibana:x:123:

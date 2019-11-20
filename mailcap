@@ -36,6 +36,9 @@ text/troff; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -
 application/x-info; /usr/bin/info -f '%s'; needsterminal; description=GNU Info document
 message/rfc822; mutt -Rf '%s'; edit=mutt -f '%s'; needsterminal
 text/plain; more %s; needsterminal
+application/x-java-archive; cautious-launcher %s /usr/bin/java -jar; test=test -n "$DISPLAY"
+application/java-archive; cautious-launcher %s /usr/bin/java -jar; test=test -n "$DISPLAY"
+application/x-jar; cautious-launcher %s /usr/bin/java -jar; test=test -n "$DISPLAY"
 x-scheme-handler/mailto; thunderbird -addressbook %s; test=test -n "$DISPLAY"
 application/x-xpinstall; thunderbird -addressbook %s; test=test -n "$DISPLAY"
 text/english; vim %s; needsterminal
