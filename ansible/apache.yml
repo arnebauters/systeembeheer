@@ -1,9 +1,13 @@
+
 ---
 - hosts: apache
   sudo: yes
   vars:
     http_port: 80
     domain: viesmans.com 
+    apache_vhosts:
+      - servername: www1.arne-bauters.sb.uclllabs.be
+      - servername: www2.arne-bauters.sb.uclllabs.be
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
@@ -17,6 +21,10 @@
       file:
         path: /var/www/html/{{ domain }}
         state: directory
+
+    - name: create index file for each vhost
+      template: src=index.html dest=/var/www/html/{{ item.servername }}/index.html
+      with_items: apache_vhosts
  
     - name: create index file for domain
       template: src=index.html dest=/var/www/html/{{ domain }}/index.html 
@@ -25,7 +33,7 @@
       lineinfile: dest=/etc/apache2/ports.conf regexp="^Listen " line="Listen {{ http_port }}" state=present
       notify:
        - restart apache2
-
+     
     - name: create virtual host file
       template: src=virtualhost.conf dest=/etc/apache2/sites-available/{{ domain }}.conf
 
