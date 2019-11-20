@@ -63,3 +63,4 @@ vmail:!::
 netplan:!::
 bind:!::
 elasticsearch:!::
+kibana:!::

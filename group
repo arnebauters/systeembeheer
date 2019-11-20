@@ -64,3 +64,4 @@ netplan:x:63434:
 bind:x:117:
 elasticsearch:x:122:
 kibana:x:123:
+logstash:x:999:
