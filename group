@@ -28,7 +28,7 @@ list:x:38:
 irc:x:39:
 src:x:40:
 gnats:x:41:
-shadow:x:42:
+shadow:x:42:freerad
 utmp:x:43:
 video:x:44:
 sasl:x:45:
@@ -39,7 +39,7 @@ users:x:100:
 nogroup:x:65534:
 crontab:x:101:
 syslog:x:102:
-ssl-cert:x:103:
+ssl-cert:x:103:freerad
 input:x:104:
 systemd-journal:x:105:
 systemd-network:x:106:
@@ -65,3 +65,4 @@ bind:x:117:
 elasticsearch:x:122:
 kibana:x:123:
 logstash:x:999:
+freerad:x:124:

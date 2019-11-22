@@ -28,7 +28,7 @@ list:*::
 irc:*::
 src:*::
 gnats:*::
-shadow:*::
+shadow:*::freerad
 utmp:*::
 video:*::
 sasl:*::
@@ -64,3 +64,5 @@ netplan:!::
 bind:!::
 elasticsearch:!::
 kibana:!::
+logstash:!::
+freerad:!::

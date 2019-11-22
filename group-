@@ -28,7 +28,7 @@ list:x:38:
 irc:x:39:
 src:x:40:
 gnats:x:41:
-shadow:x:42:
+shadow:x:42:freerad
 utmp:x:43:
 video:x:44:
 sasl:x:45:
@@ -64,3 +64,5 @@ netplan:x:63434:
 bind:x:117:
 elasticsearch:x:122:
 kibana:x:123:
+logstash:x:999:
+freerad:x:124:
