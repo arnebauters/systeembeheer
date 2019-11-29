@@ -39,7 +39,7 @@ users:*::
 nogroup:*::
 crontab:!::
 syslog:!::
-ssl-cert:!::
+ssl-cert:!::freerad
 input:!::
 systemd-journal:!::
 systemd-network:!::
@@ -66,3 +66,8 @@ elasticsearch:!::
 kibana:!::
 logstash:!::
 freerad:!::
+redis:!::
+Debian-snmp:!::
+cento:!::
+n2disk:!::
+ntopng:!::

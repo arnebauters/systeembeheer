@@ -1,0 +1,2 @@
+deb http://packages.ntop.org/apt-stable/18.04/ x64/
+deb http://packages.ntop.org/apt-stable/18.04/ all/

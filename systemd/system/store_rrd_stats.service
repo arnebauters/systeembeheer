@@ -1,0 +1,14 @@
+[Unit]
+Description=Start/stop store_rrd_stats service
+After=network.target syslog.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+ExecStart=/etc/init.d/store_rrd_stats start
+ExecStop=/etc/init.d/store_rrd_stats stop
+
+[Install]
+WantedBy=multi-user.target
+

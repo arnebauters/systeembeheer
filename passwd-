@@ -38,3 +38,8 @@ elasticsearch:x:114:122::/nonexistent:/bin/false
 kibana:x:115:123::/home/kibana:/bin/false
 logstash:x:999:999:LogStash Service User:/usr/share/logstash:/usr/sbin/nologin
 freerad:x:116:124::/etc/freeradius:/usr/sbin/nologin
+redis:x:117:125::/var/lib/redis:/usr/sbin/nologin
+Debian-snmp:x:118:126::/var/lib/snmp:/bin/false
+cento:x:998:998::/home/cento:/bin/sh
+n2disk:x:1003:1003::/home/n2disk:/bin/sh
+ntopng:x:997:997::/home/ntopng:/bin/false

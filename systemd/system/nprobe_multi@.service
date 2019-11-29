@@ -1,0 +1,21 @@
+[Unit]
+Description=nprobe extensible NetFlow v5/v9/IPFIX probe/collector for IPv4/v6 on %I - multi instance manager
+After=network.target syslog.target redis.service pf_ring.service cluster.service
+Requires=pf_ring.service cluster.service
+
+[Service]
+Type=oneshot
+
+RemainAfterExit=yes
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) nprobe_multi %i StartPre" >> /var/log/ntop-systemd.log'
+
+ExecStart=/usr/local/bin/nprobectl start %i
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) nprobe_multi %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStop=/usr/local/bin/nprobectl stop %i
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) nprobe_multi %i StopPost" >> /var/log/ntop-systemd.log'
+
+[Install]
+WantedBy=multi-user.target

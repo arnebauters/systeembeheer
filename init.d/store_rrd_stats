@@ -1,0 +1,43 @@
+#! /bin/bash
+# /etc/init.d/store_rrd_stats
+### BEGIN INIT INFO
+# Provides:          store_rrd_stats
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start daemon at boot time
+# Description:       Enable service provided by daemon.
+### END INIT INFO
+
+start_store_rrd_stats() {
+  /usr/local/nbox/store_rrd_stats_script > /dev/null 2>&1 &
+}
+
+stop_store_rrd_stats() {
+  killall store_rrd_stats_script > /dev/null 2>&1 &
+}
+
+logger "store_rrd_stats $1"
+
+case "$1" in
+  start)
+	start_store_rrd_stats;
+	;;
+
+  stop)
+       	stop_store_rrd_stats;
+	;;
+
+  restart)
+        stop_store_rrd_stats;
+	sleep 5
+	start_store_rrd_stats;
+	;;
+
+  *)
+	echo "Usage: /etc/init.d/store_rrd_stats {start|stop|restart}"
+	exit 1
+esac
+
+exit 0

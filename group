@@ -66,3 +66,9 @@ elasticsearch:x:122:
 kibana:x:123:
 logstash:x:999:
 freerad:x:124:
+redis:x:125:
+Debian-snmp:x:126:
+cento:x:998:
+n2disk:x:1003:
+ntopng:x:997:
+nprobe:x:996:

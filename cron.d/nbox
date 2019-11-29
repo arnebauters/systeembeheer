@@ -1,0 +1,1 @@
+* * * * * root python /var/ntop/utils/scheduler.py > /dev/null 2>&1

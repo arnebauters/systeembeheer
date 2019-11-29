@@ -1,0 +1,9 @@
+# /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the man page for details on how to write a sudoers file.
+#
+
+apache ALL=NOPASSWD: /sbin/shutdown, /sbin/reboot, /usr/sbin/useradd, /usr/sbin/userdel, /bin/tar, /bin/mv, /usr/sbin/chpasswd, /usr/bin/perl, /usr/bin/htpasswd, /etc/init.d/[0-9A-z]*, /usr/bin/dpkg, /usr/bin/apt-get, /sbin/ethtool, /usr/bin/ipmitool, /sbin/iptables-save, /bin/kill, /bin/cat, /bin/mkdir, /bin/chmod, /usr/bin/lspci, /usr/bin/touch, /bin/rm
+www-data ALL=NOPASSWD: /sbin/shutdown, /sbin/reboot, /usr/sbin/useradd, /usr/sbin/userdel, /bin/tar, /bin/mv, /usr/sbin/chpasswd, /usr/bin/perl, /usr/bin/htpasswd, /etc/init.d/[0-9A-z]*, /usr/bin/dpkg, /usr/bin/apt-get, /sbin/ethtool, /usr/bin/ipmitool, /sbin/iptables-save, /bin/kill, /bin/cat, /bin/mkdir, /bin/chmod, /usr/bin/lspci, /usr/bin/touch, /bin/rm
