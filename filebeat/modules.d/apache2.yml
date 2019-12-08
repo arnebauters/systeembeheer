@@ -5,7 +5,7 @@
     
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    var.paths: ["/var/log/apache2/*access.log"]
+    var.paths: ["/var/log/apache2/www1_access.log"]
 
   # Error logs
   error:
@@ -13,4 +13,4 @@
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    var.paths: ["/var/log/apache2/*error.log"]
+    var.paths: ["/var/log/apache2/www1_error.log"]

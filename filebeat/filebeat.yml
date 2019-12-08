@@ -28,11 +28,12 @@ filebeat.inputs:
     - /var/log/*.log
 
 - type: log
+  enabled: true
   paths:
-    - "/var/log/apache2/*"
+    - /var/log/apache2/*.log
   fields:
     apache: true
-    fields_under_root: true
+  fields_under_root: true
     #- c:\programdata\elasticsearch\logs\*
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
   # matching any regular expression from the list.
