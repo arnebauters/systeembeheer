@@ -21,6 +21,7 @@ arne-bauters.sb.uclllabs.be.	IN	NS	ns.sam-arnalsteen.sb.uclllabs.be.
 
 ;A records
 
+projekt1	IN	A	193.191.177.84
 ns	IN	A	193.191.177.130
 www	IN	A	193.191.177.130
 test	IN	A	193.191.177.254
@@ -37,6 +38,8 @@ mx	IN	A	193.191.177.130
 @       IN      AAAA    2001:6a8:2880:a077::82
 ns      IN      AAAA    2001:6a8:2880:a077::82
 mx      IN      AAAA    2001:6a8:2880:a077::82
+
+docker	IN	A	193.191.177.84
 
 arne-bauters.sb.uclllabs.be.	IN	CAA	0 issue	"letsencrypt.org"
 arne-bauters.sb.uclllabs.be.	IN	CAA	0 iodef "mailto:root@arne-bauters.sb.uclllabs.be"
