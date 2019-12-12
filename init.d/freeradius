@@ -62,11 +62,12 @@ case "$1" in
                   log_action_cont_msg "$PIDFILE not found"
                   ret=0
                 fi
+		pkill radiusd
                 log_end_msg $ret
                 ;;
         restart)
                 $0 stop
-                $0 start
+		$0 start
                 ;;
         reload|force-reload)
                 log_daemon_msg "Reloading $DESCR" "$PROG"

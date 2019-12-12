@@ -71,3 +71,5 @@ Debian-snmp:!::
 cento:!::
 n2disk:!::
 ntopng:!::
+nprobe:!::
+haproxy:!::

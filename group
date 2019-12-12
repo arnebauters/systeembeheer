@@ -72,3 +72,5 @@ cento:x:998:
 n2disk:x:1003:
 ntopng:x:997:
 nprobe:x:996:
+haproxy:x:127:
+docker:x:128:
